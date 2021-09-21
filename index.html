@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>TCN | Login</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-    <h1 class="text-2xl text-center text-brand font-bold">Hello1</h1>
-</body>
+
+<body class="bg-bGray text-gray-900 font-sans">
+     <div class="flex flex-col items-center h-full w-full">
+          <div class="logo-cont mt-5 mb-10">
+               <img src="img/tcnLogo 1.png" alt="logo" class="block m-auto">
+               <span class="text-primary font-lato text-sm font-bold">TRANSMISSION COMPANY OF NIGERIA</span>
+          </div>
+          <div class="bg-white rounded-3xl shadow-xl px-10 py-8 m-4 md:max-w-auto">
+               <div class="text-center mb-8 font-lato">
+                    <span class="block text-tDark w-full text-xl uppercase font-bold mb-4">Login</span>  
+                    <span class="block text-tLight w-full text-xs">By login in, you have access to all admin priviledges to TCN <br> dashboard. </span>
+               </div>
+               
+               <form class="mb-4" action="/" method="post">
+                    <div class="mb-4 md:w-full">
+                         <span class="block uppercase text-xs mb-2">email address</span>
+                         <input class="w-full text-cLight text-xs border rounded py-2 px-3 outline-none focus:shadow-outline" type="email" name="email" id="email" placeholder="e.g. example@email.com">
+                    </div>
+                    <div class="mb-6 md:w-full"> 
+                         <span class="block text-tLight uppercase text-xs mb-2">Password</span>
+                         <input class="w-full text-cLight text-xs border rounded py-2 px-3 outline-none focus:shadow-outline" type="password" name="password" id="password">
+                    </div>
+                    <button class="w-full bg-primary hover:bg-blue-700 text-white uppercase text-sm font-bold px-4 py-2 rounded-md">Login</button>
+               </form>
+          </div>
+     </div>
+ </body>
 </html>
