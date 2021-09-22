@@ -13,7 +13,7 @@ module.exports = {
         secondaryLight: '#94D5F4',
         danger: '#DC2050',
         success: '#008B5E',
-        bGray: '#C7D2DC',
+        bGray: '#F8F9FA',
       },
       fontFamily: {
         lato: ['Lato', 'sans-serif'],

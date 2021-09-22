@@ -11,29 +11,154 @@
      <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body class="bg-cLight text-gray-900 font-sans h-full">
-     <div class="lg:px-24 lg:py-8">
-         <nav class="flex justify-between items-center">
+<body class="bg-bGray text-gray-900 font-sans h-full">
+    <div class="px-6 py-8 md:px-24 md:py-8">
+        <nav class="flex justify-between items-center">
             <div class="">
-                <img src="img/logo.png" alt="logo" class="mx-auto">
-                <span class="text-primary font-lato text-sm font-bold">TRANSMISSION COMPANY OF NIGERIA</span>
+                <img src="/img/logo.png" alt="logo" class="mx-auto">
+                <span class="text-primary font-lato hidden md:hidden lg:block md:text-sm font-bold">TRANSMISSION COMPANY OF NIGERIA</span>
            </div>
-           <div class="flex gap-5 items-center font-bold font-lato">
+           <div class="dropdown cursor-pointer flex gap-5 items-center font-bold font-lato">
                 <span class="text-primary  text-sm uppercase">menu</span>
                 <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.5 0.75L6 5.25L10.5 0.75" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>                    
            </div>
            <div class="profile flex gap-5 items-center">
-               <img src="img/Avatars.png" alt="">
-               <div class="flex gap-5 items-center font-bold font-lato">
+               <img src="/img/Avatars.png" alt="logo">
+               <div class="gap-5 items-center font-bold font-lato hidden md:hidden lg:flex">
                     <span class="text-primary text-sm uppercase font-bold">admin name</span>
                     <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1.5 0.75L6 5.25L10.5 0.75" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>                    
                 </div>
            </div>
-         </nav>
-     </div>
+        </nav>
+
+        <div class="hidden shadow-xl rounded-2xl mt-4 max-w-sm mx-auto p-7 md:relative bg-white md:max-w-3xl md:mx-auto md:px-10 md:py-12 lg:max-w-full lg:px-8 lg:py-14">
+            <div class="hidden md:bg-white md:absolute md:w-8 md:h-8 md:top-0 md:left-2/4 md:transform md:rotate-45"></div>
+            <div class="grid grid-rows-6 gap-4 md:grid md:grid-rows-4 md:grid-flow-col md:gap-4 lg:grid lg:grid-rows-2 lg:grid-flow-col lg:grid-cols-3 lg:grid-rows-2  lg:gap-4">
+                <div class="p-4 rounded-lg border flex gap-5 md:py-4 md:px-2 lg:py-5 lg:px-3">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+                    <div class="font-lato w-44">
+                        <h2 class="text-lg text-tDark font-lato font-semibold">Dashboard</h2>
+                        <span class="hidden text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                    </div>
+                        
+                </div>
+                <div class="p-4 rounded-lg border flex gap-5 md:py-4 md:px-2 lg:py-5 lg:px-3">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+                    <div class="font-lato w-44">
+                        <h2 class="text-lg text-tDark font-semibold">Regions</h2>
+                        <span class="hidden text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                    </div>
+                        
+                </div>
+                <div class="p-4 rounded-lg border flex gap-5 md:py-4 md:px-2 lg:py-5 lg:px-3">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+                    <div class="font-lato w-44">
+                        <h2 class="text-lg text-tDark font-semibold">Stations</h2>
+                        <span class="hidden text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                    </div>
+                        
+                </div>
+                <div class="p-4 rounded-lg border flex gap-5 md:py-4 md:px-2 lg:py-5 lg:px-3">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+                    <div class="font-lato w-44">
+                        <h2 class="text-lg text-tDark font-semibold">Departments</h2>
+                        <span class="hidden text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                    </div>
+                        
+                </div>
+                <div class="p-4 rounded-lg border flex gap-5 md:py-4 md:px-2 lg:py-5 lg:px-3">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+                    <div class="font-lato w-44">
+                        <h2 class="text-lg text-tDark font-semibold">Access Control</h2>
+                        <span class="hidden text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                    </div>
+                        
+                </div>
+                <div class="p-4 rounded-lg border flex gap-5 md:py-4 md:px-2 lg:py-5 lg:px-3">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+                    <div class="font-lato w-44">
+                        <h2 class="text-lg text-tDark font-semibold">System Users</h2>
+                        <span class="hidden text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                    </div>
+                        
+                </div>
+                <div class="p-4 rounded-lg border flex gap-5 md:py-4 md:px-2 lg:py-5 lg:px-3">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+                    <div class="font-lato w-44">
+                        <h2 class="text-lg text-tDark font-semibold">Settings</h2>
+                        <span class="hidden text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
