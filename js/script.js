@@ -46,24 +46,55 @@
 
 
 // Dropdown
-const dropDown = document.querySelectorAll('.dropdownList');
 
-dropDown.forEach( el => {
-    el.addEventListener('click', (e) => {
-        let target = e.currentTarget;
-        let childDom = target.children[1];
+// const dropDown = document.querySelectorAll('.dropdownList');
 
-        childDom.innerHTML = ' ';
+// dropDown.forEach( el => {
+//     el.addEventListener('click', (e) => {
+//         let target = e.currentTarget;
+//         let childDom = target.children[1];
 
-        let templateString = `<ul class="list border rounded-lg text-xs font-medium">
-                                    <li class="p-2 border-b cursor-pointer"><a href="#"> Edit</a></li>
-                                    <li  class="p-2 border-b cursor-pointer"><a href="#"> View Region </a></li>
-                                    <li  class="p-2 border-b cursor-pointer"><a href="#"> View Discos </a></li>
-                                    <li  class="p-2 border-b cursor-pointer"><a href="#"> Change Status</a></li>
-                                    <li  class="p-2 cursor-pointer"><a href="#"> Audit Trail</a></li>
-                                </ul> `;
+//         childDom.innerHTML = ' ';
 
-    });
+//         let templateString = `   <div class="z-50 bg-white absolute w-24 -left-4 top-6">
+//                                     <ul class="list border rounded-lg text-xs font-medium">
+//                                         <li class="p-2 border-b cursor-pointer"><a href="#"> Edit</a></li>
+//                                         <li  class="p-2 border-b cursor-pointer"><a href="#"> View Region </a></li>
+//                                         <li  class="p-2 border-b cursor-pointer"><a href="#"> View Discos </a></li>
+//                                         <li  class="p-2 border-b cursor-pointer"><a href="#"> Change Status</a></li>
+//                                         <li  class="p-2 cursor-pointer"><a href="#"> Audit Trail</a></li>
+//                                     </ul> 
+//                                 </div>`;
+
+//     });
+// });
+
 });
 
-    });
+function options(ele){
+    
+   
+    if(ele.classList.contains('show-class')){
+        const trOption = document.querySelector( '.tr-option-btn.show-class .tr-options');
+        if(trOption){
+            trOption.remove();
+        }
+    }else{
+        let templateString = `<div class="tr-options z-50 bg-white absolute w-24 -left-4 top-6">
+                            <ul class="list border rounded-lg text-xs font-medium">
+                                <li class="p-2 border-b cursor-pointer"><a href="#"> Edit</a></li>
+                                <li  class="p-2 border-b cursor-pointer"><a href="#"> View Region </a></li>
+                                <li  class="p-2 border-b cursor-pointer"><a href="#"> View Discos </a></li>
+                                <li  class="p-2 border-b cursor-pointer"><a href="#"> Change Status</a></li>
+                                <li  class="p-2 cursor-pointer"><a href="#"> Audit Trail</a></li>
+                            </ul> 
+                        </div>`;
+        ele.insertAdjacentHTML('beforebegin', templateString); 
+        ele.classList.add('show-option'); 
+    }
+
+}
+
+
+    
+    
