@@ -15,7 +15,7 @@
         }
 
         let caretToggle = function(el){
-            el.forEach( (el, index) => {
+            el.forEach( (el) => {
                 el.classList.toggle('hidden');
             });
         }
@@ -42,5 +42,28 @@
 
             addToggler(navMenu, navCaret)
         });
+
+
+
+// Dropdown
+const dropDown = document.querySelectorAll('.dropdownList');
+
+dropDown.forEach( el => {
+    el.addEventListener('click', (e) => {
+        let target = e.currentTarget;
+        let childDom = target.children[1];
+
+        childDom.innerHTML = ' ';
+
+        let templateString = `<ul class="list border rounded-lg text-xs font-medium">
+                                    <li class="p-2 border-b cursor-pointer"><a href="#"> Edit</a></li>
+                                    <li  class="p-2 border-b cursor-pointer"><a href="#"> View Region </a></li>
+                                    <li  class="p-2 border-b cursor-pointer"><a href="#"> View Discos </a></li>
+                                    <li  class="p-2 border-b cursor-pointer"><a href="#"> Change Status</a></li>
+                                    <li  class="p-2 cursor-pointer"><a href="#"> Audit Trail</a></li>
+                                </ul> `;
+
+    });
+});
 
     });
