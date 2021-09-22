@@ -1,4 +1,11 @@
 @tailwind base;
 @tailwind components;
+
+/* SwitchToogel */
+    input[type='checkbox']:checked ~ .dot {
+        transform: translateX(100%);
+        background-color: #2269AB;
+    }; 
+
 @tailwind utilities;
-@tailwind forms;
+

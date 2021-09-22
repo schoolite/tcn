@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>TCN | Region Profile </title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="bg-gray-200 text-gray-900 font-sans min-h-screen  py-5">
+        <div class="w-10/12 mx-auto relative">
+            <nav class="flex justify-between items-center">
+                <div class="">
+                    <img src="./img/logo.png" alt="logo" class="mx-auto">
+                    <span class="text-primary font-lato hidden md:hidden lg:block md:text-sm font-bold">TRANSMISSION COMPANY OF NIGERIA</span>
+                </div>
+                <div class="dropdown cursor-pointer flex gap-5 items-center font-bold font-lato">
+                    <span class="text-primary  text-sm uppercase">menu</span>
+                    <svg class="navIcon hidden" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 0.75L6 5.25L10.5 0.75" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg class="navIcon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5 11.25L9 6.75L4.5 11.25" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                       
+                </div>
+                <div class="profile flex gap-5 relative items-center">
+                    <img src="./img/Avatars.png" alt="logo">
+                    <div class="gap-5 items-center font-bold font-lato hidden md:hidden lg:flex">
+                        <span class="text-primary text-sm uppercase font-bold">admin name</span>
+                        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 0.75L6 5.25L10.5 0.75" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                    
+                    </div>
+                </div>
+
+                <!-- UserMenu -->
+                <div class="userMenu hidden absolute w-2/6 sm:w-1/4 md:w-1/5 z-50 right-0 top-16">
+                    <div class="transition-transform shadow-xl rounded-lg relative bg-white">
+                        <!-- <div class="md:bg-white absolute md:w-8 md:h-8 md:top-0 left-28 md:transform md:rotate-45"></div> -->
+                        <ul>
+                            <li class="py-2 px-4 cursor-pointer hover:bg-grayLight rounded-t-lg"><a class="uppercase font-medium text-xs" href="#"> Profile </a></li>
+                            <li class="border-b border-t py-2 px-4 hover:bg-grayLight cursor-pointer"><a class="uppercase font-medium text-xs" href="#"> Settings </a></li>
+                            <li class="py-2 px-4 hover:bg-grayLight cursor-pointer rounded-b-lg"><a class="uppercase font-medium text-xs" href="#"> Log Out </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Navigation Menu -->
+            <div class="navMenu hidden absolute w-full z-40">
+                <div class="transition-transform shadow-xl rounded-2xl mt-4 max-w-sm mx-auto p-7 md:relative bg-white md:max-w-3xl md:mx-auto md:px-10 md:py-12 lg:max-w-full lg:px-8 lg:py-14">
+                    <div class="md:bg-white md:absolute md:w-8 md:h-8 md:top-0 md:left-2/4 md:transform md:rotate-45"></div>
+                    <div class="grid grid-rows-6 gap-4 md:grid md:grid-rows-4 md:grid-flow-col md:gap-4 lg:grid lg:grid-rows-2 lg:grid-flow-col lg:grid-cols-3 lg:gap-4">
+                        <div class="p-4 rounded-lg border flex gap-5 md:py-4 md:px-2 lg:py-5 lg:px-3">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <div class="font-lato w-44">
+                                <h2 class="text-lg text-tDark font-lato font-semibold">Dashboard</h2>
+                                <span class="hidden text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                            </div>
+                                
+                        </div>
+                        <div class="p-4 rounded-lg border flex gap-5 md:py-4 md:px-2 lg:py-5 lg:px-3">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <div class="font-lato w-44">
+                                <h2 class="text-lg text-tDark font-semibold">Regions</h2>
+                                <span class="hidden text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                            </div>
+                                
+                        </div>
+                        <div class="p-4 rounded-lg border flex gap-5 md:py-4 md:px-2 lg:py-5 lg:px-3">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <div class="font-lato w-44">
+                                <h2 class="text-lg text-tDark font-semibold">Stations</h2>
+                                <span class="hidden text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                            </div>
+                                
+                        </div>
+                        <div class="p-4 rounded-lg border flex gap-5 md:py-4 md:px-2 lg:py-5 lg:px-3">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <div class="font-lato w-44">
+                                <h2 class="text-lg text-tDark font-semibold">Departments</h2>
+                                <span class="hidden text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                            </div>
+                                
+                        </div>
+                        <div class="p-4 rounded-lg border flex gap-5 md:py-4 md:px-2 lg:py-5 lg:px-3">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <div class="font-lato w-44">
+                                <h2 class="text-lg text-tDark font-semibold">Access Control</h2>
+                                <span class="hidden text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                            </div>
+                                
+                        </div>
+                        <div class="p-4 rounded-lg border flex gap-5 md:py-4 md:px-2 lg:py-5 lg:px-3">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <div class="font-lato w-44">
+                                <h2 class="text-lg text-tDark font-semibold">System Users</h2>
+                                <span class="hidden text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                            </div>
+                                
+                        </div>
+                        <div class="p-4 rounded-lg border flex gap-5 md:py-4 md:px-2 lg:py-5 lg:px-3">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <div class="font-lato w-44">
+                                <h2 class="text-lg text-tDark font-semibold">Settings</h2>
+                                <span class="hidden text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                            </div>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Breadcrumb -->
+            <nav class="my-8 uppercase">
+                <ol class="list-reset flex text-grey-dark text-cLight">
+                  <li><a href="#" class="font-normal text-xs">Region</a></li>
+                  <li><span class="mx-2">/</span></li>
+                  <li><a href="#" class="font-normal text-xs">View Region</a></li>
+                </ol>
+            </nav>
+
+            <!-- Descriptions -->
+            <div class="description px-9 py-6 bg-white mb-8 rounded-lg">
+                <h4 class="font-bold text-xl"> Wuse II Region </h4>
+                <div class="md:flex justify-between mb-11 items-baseline">
+                    <div class="text-xs flex justify-between sm:gap-4 text-tLight">
+                        <p class="flex-auto">
+                            Created by: <span class="text-cLight"> Joe Doe </span>
+                        </p>
+                        <p class="flex-auto">
+                            Date Created: <span class="text-cLight"> 23-09-2010 </span>
+                        </p>
+                    </div>
+
+                    <!-- Toggle Switch -->
+                    <div class="flex items-center mt-3 md:mt-0 md:justify-end">
+                        <label for="toogleSwitch" class="flex items-center cursor-pointer">
+                            <div class="mr-3">
+                                Status: <span> Enabled</span>
+                            </div>
+                          <div class="relative">
+                            <input id="toogleSwitch" type="checkbox" class="sr-only" checked/>
+                            <div class="w-10 h-4 bg-gray-300 rounded-full shadow-inner"></div>
+                            <div class="dot absolute w-6 h-6 bg-white rounded-full shadow -left-1 -top-1 transition"></div>
+                          </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="md:flex justify-between items-center gap-6">
+                    <div class="rounded-lg p-4 md:w-6/12 bg-bGray">
+                        <h6 class="text-lg font-semibold text-tDark mb-2 uppercase"> Description </h6>
+                        <p class="text-sm font-medium">
+                            The quick brows afh  has ckas nfuaw vby bus baa vai  hti ab vha[aus jajk  vacnj comunicatgd with tada  opfful as The quick brows afh  has ckas nfuaw vby bus baa vai  hti ab vha[aus jajk  vacnj comunicatgd with tada  opfful astlye of tha  ceuc jr acaqaltiorium of a measurac tlye of tha  ceuc jr acaqaltiorium of a measurac
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Region Section -->
+            <div class="Region bg-white rounded-lg px-8 py-7 shadow">
+                <div class="flex justify-between mb-11 items-center">
+                    <h4 class="text-tDark text-base font-bold"> List of Stations </h4>
+                    <button class="py-2 px-3 border rounded text-xs font-medium uppercase text-primary flex items-center" type="button" name="add_region" id="add_region"> 
+                        <svg class="inline-block mr-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 0.75V11.25" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M0.749756 6H11.2498" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> add region     
+                    </button>
+                </div>
+                <div class="md:flex justify-between items-baseline mb-8">
+                    <p class="font-normal text-sm text-tLight mb-3 md:mb-0"> Showing <span>10</span> of <span>32</span> Results </p>
+                    <form class=" w-full md:w-3/6 lg:w-1/4" action="/" method="post">
+                        <div class="relative">
+                            <label class="sr-only text-xs">Search</label>
+                            <input class="py-2 pl-3 pr-7 text-xs rounded-lg outline-none border w-full text-cLight" type="text" name="text" id="tetx" placeholder="Search...">
+                            <svg class="absolute top-2 right-2" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.875 13.5C10.9816 13.5 13.5 10.9816 13.5 7.875C13.5 4.7684 10.9816 2.25 7.875 2.25C4.7684 2.25 2.25 4.7684 2.25 7.875C2.25 10.9816 4.7684 13.5 7.875 13.5Z" stroke="#333333" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.7496 15.7501L11.8496 11.8501" stroke="#3F4E5B" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                        
+                        </div>
+                   </form>
+                </div>
+                <!-- Region table -->
+                <div class="Region_table">
+                    <div class="relative overflow-x-auto overflow-y-hidden">
+                        <div class="align-middle inline-block min-w-full">
+                            <table class="min-w-full border">
+                                <thead class="border-b text-tDark text-sm">
+                                    <tr class="text-left">
+                                        <th class="px-4 py-2">
+                                            S/N
+                                        </th>
+                                        <th class="px-4 py-2">
+                                            Name of Stations
+                                        </th>
+                                        <th class="px-4 py-2">
+                                            Location
+                                        </th>
+                                        <th class="px-4 py-2">
+                                            Station Type
+                                        </th>
+                                        <th class="px-4 py-2">
+                                            Total Depts.
+                                        </th>
+                                        <th class="px-4 py-2">
+                                            Created By
+                                        </th>
+                                        <th class="px-4 py-2">
+                                            Created Date
+                                        </th>
+                                        <th class="px-4 py-2">
+                                            Status
+                                        </th>
+                                        <th class="px-4 py-2">
+                                            Actions
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-sm">
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <span class="cursor-pointer">
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <span class="cursor-pointer">
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <span class="cursor-pointer">
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <span class="cursor-pointer">
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <span class="cursor-pointer">
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <span class="cursor-pointer">
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <span class="cursor-pointer">
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <span class="cursor-pointer">
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <span class="cursor-pointer">
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <span class="cursor-pointer">
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="container mt-8 text-cLight text-sm">
+                            <ul class="flex">
+                                <li>
+                                    <a href="#" class="underline uppercase py-1 hover:text-primary">Prev</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="py-1 px-2 hover:text-primary">1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="py-1 px-2 hover:text-primary">2</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="py-1 px-2 hover:text-primary">3</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="underline uppercase py-1 hover:text-primary">Next</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Region bg-white rounded-lg px-8 py-7 shadow mt-8">
+                <div class="flex justify-between mb-11 items-center">
+                    <h4 class="text-tDark text-base font-bold"> List of DisCos </h4>
+                    <button class="py-2 px-3 border rounded text-xs font-medium uppercase text-primary flex items-center" type="button" name="add_region" id="add_region"> 
+                        <svg class="inline-block mr-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 0.75V11.25" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M0.749756 6H11.2498" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> add region     
+                    </button>
+                </div>
+                <div class="md:flex justify-between items-baseline mb-8">
+                    <p class="font-normal text-sm text-tLight mb-3 md:mb-0"> Showing <span>10</span> of <span>32</span> Results </p>
+                    <form class=" w-full md:w-3/6 lg:w-1/4" action="/" method="post">
+                        <div class="relative">
+                            <label class="sr-only text-xs">Search</label>
+                            <input class="py-2 pl-3 pr-7 text-xs rounded-lg outline-none border w-full text-cLight" type="text" name="text" id="tetx" placeholder="Search...">
+                            <svg class="absolute top-2 right-2" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.875 13.5C10.9816 13.5 13.5 10.9816 13.5 7.875C13.5 4.7684 10.9816 2.25 7.875 2.25C4.7684 2.25 2.25 4.7684 2.25 7.875C2.25 10.9816 4.7684 13.5 7.875 13.5Z" stroke="#333333" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.7496 15.7501L11.8496 11.8501" stroke="#3F4E5B" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                        
+                        </div>
+                   </form>
+                </div>
+                <!-- Region table -->
+                <div class="Region_table">
+                    <div class="relative overflow-x-auto overflow-y-hidden">
+                        <div class="align-middle inline-block min-w-full">
+                            <table class="min-w-full border">
+                                <thead class="border-b text-tDark text-sm">
+                                    <tr class="text-left">
+                                        <th class="px-4 py-2">
+                                            S/N
+                                        </th>
+                                        <th class="px-4 py-2">
+                                            Name of Stations
+                                        </th>
+                                        <th class="px-4 py-2">
+                                            Location
+                                        </th>
+                                        <th class="px-4 py-2">
+                                            Station Type
+                                        </th>
+                                        <th class="px-4 py-2">
+                                            Total Depts.
+                                        </th>
+                                        <th class="px-4 py-2">
+                                            Created By
+                                        </th>
+                                        <th class="px-4 py-2">
+                                            Created Date
+                                        </th>
+                                        <th class="px-4 py-2">
+                                            Status
+                                        </th>
+                                        <th class="px-4 py-2">
+                                            Actions
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-sm">
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <span class="cursor-pointer">
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <span class="cursor-pointer">
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <span class="cursor-pointer">
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <span class="cursor-pointer">
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <span class="cursor-pointer">
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <span class="cursor-pointer">
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <span class="cursor-pointer">
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <span class="cursor-pointer">
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <span class="cursor-pointer">
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <span class="cursor-pointer">
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="container mt-8 text-cLight text-sm">
+                            <ul class="flex">
+                                <li>
+                                    <a href="#" class="underline uppercase py-1 hover:text-primary">Prev</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="py-1 px-2 hover:text-primary">1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="py-1 px-2 hover:text-primary">2</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="py-1 px-2 hover:text-primary">3</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="underline uppercase py-1 hover:text-primary">Next</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Menu Toggler -->
+    <script>
+        window.addEventListener('load', (e)=> {
+            const menu = document.querySelector('.dropdown');
+            const navMenu = document.querySelector('.navMenu');
+
+            menu.addEventListener('click', (e)=>{
+                navMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
