@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build-css": "tailwind build -i index.css -o css/style.css",
     "dev": "vite"
   },
   "repository": {
