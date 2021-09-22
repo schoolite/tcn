@@ -164,25 +164,20 @@
                     </div>
                 </div>
             </div>
-            <!-- Breadcrumb -->
-            <nav class="my-8 uppercase">
-                <ol class="list-reset flex text-grey-dark text-cLight">
-                  <li><a href="#" class="font-normal text-xs">Region</a></li>
-                </ol>
-            </nav>
+            <div class="uppercase font-medium text-xs text-cLight mt-16 mb-8"> Stations </div>
             <!-- Regions Section -->
-            <div class="Region bg-white rounded-lg px-8 py-7 shadow">
+            <div class="Departments bg-white rounded-lg px-8 py-7 shadow">
                 <div class="flex justify-between mb-11 items-center">
-                    <h4 class="text-tDark text-base font-bold"> Regions </h4>
+                    <h4 class="text-tDark text-base font-bold"> Stations</h4>
                     <button class="py-2 px-3 border rounded text-xs font-medium uppercase text-primary flex items-center" type="button" name="add_region" id="add_region"> 
                         <svg class="inline-block mr-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 0.75V11.25" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M0.749756 6H11.2498" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg> add region     
+                        </svg> add station     
                     </button>
                 </div>
                 <div class="md:flex justify-between items-baseline mb-8">
-                    <p class="font-normal text-sm text-tLight mb-3 md:mb-0"> Showing <span>10</span> of <span>32</span> Results </p>
+                    <p class="font-normal text-sm text-tLight mb-3 md:mb-0"> Showing 10 of 32 Results </p>
                     <form class=" w-full md:w-3/6 lg:w-1/4" action="/" method="post">
                         <div class="relative">
                             <label class="sr-only text-xs">Search</label>
@@ -197,325 +192,304 @@
                 <div class="Region_table">
                     <div class="overflow-x-auto">
                         <div class="align-middle inline-block min-w-full">
-                            <div class="overflow-hidden">
-                                <table class="min-w-full border">
-                                    <thead class="border-b text-tDark text-sm">
-                                        <tr class="text-left">
-                                            <th class="px-4 py-3">
-                                                S/N
-                                            </th>
-                                            <th class="px-4 py-3">
-                                                Name of Region
-                                            </th>
-                                            <th class="px-4 py-3">
-                                                Total Stations
-                                            </th>
-                                            <th class="px-4 py-3">
-                                                Total DisCos
-                                            </th>
-                                            <th class="px-4 py-3">
-                                                Total GenCos
-                                            </th>
-                                            <th class="px-4 py-3">
-                                                Created By
-                                            </th>
-                                            <th class="px-4 py-3">
-                                                Created Date
-                                            </th>
-                                            <th class="px-4 py-3">
-                                                Status
-                                            </th>
-                                            <th class="px-4 py-3">
-                                                Actions
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="text-sm">
-                                        <tr class="border-b">
-                                            <td class="px-4 py-3 text-center">
-                                                1
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                Wuse II
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                3
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                12
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                7
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                Andrews Peter
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                07/09/2010
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
-                                            </td>
-                                            <td class="px-4 py-3">
-                                            ...
-                                            </td>
-                                        </tr>
-                                        <tr class="border-b">
-                                            <td class="px-4 py-3 text-center">
-                                                2
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                Wuse II
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                3
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                12
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                7
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                Andrews Peter
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                07/09/2010
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
-                                            </td>
-                                            <td class="px-4 py-3">
-                                            ...
-                                            </td>
-                                        </tr>
-                                        <tr class="border-b">
-                                            <td class="px-4 py-3 text-center">
-                                                3
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                Wuse II
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                3
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                12
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                7
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                Andrews Peter
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                07/09/2010
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
-                                            </td>
-                                            <td class="px-4 py-3">
-                                            ...
-                                            </td>
-                                        </tr>
-                                        <tr class="border-b">
-                                            <td class="px-4 py-3 text-center">
-                                                4
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                Wuse II
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                3
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                12
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                7
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                Andrews Peter
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                07/09/2010
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
-                                            </td>
-                                            <td class="px-4 py-3">
-                                            ...
-                                            </td>
-                                        </tr>
-                                        <tr class="border-b">
-                                            <td class="px-4 py-3 text-center">
-                                                5
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                Wuse II
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                3
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                12
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                7
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                Andrews Peter
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                07/09/2010
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
-                                            </td>
-                                            <td class="px-4 py-3">
-                                            ...
-                                            </td>
-                                        </tr>
-                                        <tr class="border-b">
-                                            <td class="px-4 py-3 text-center">
-                                                6
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                Wuse II
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                3
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                12
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                7
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                Andrews Peter
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                07/09/2010
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
-                                            </td>
-                                            <td class="px-4 py-3">
-                                            ...
-                                            </td>
-                                        </tr>
-                                        <tr class="border-b">
-                                            <td class="px-4 py-3 text-center">
-                                                7
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                Wuse II
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                3
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                12
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                7
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                Andrews Peter
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                07/09/2010
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
-                                            </td>
-                                            <td class="px-4 py-3">
-                                            ...
-                                            </td>
-                                        </tr>
-                                        <tr class="border-b">
-                                            <td class="px-4 py-3 text-center">
-                                                8
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                Wuse II
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                3
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                12
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                7
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                Andrews Peter
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                07/09/2010
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                <button type="button" class="py-1 px-2 bg-danger rounded-sm text-white" > Disabled </button>
-                                            </td>
-                                            <td class="px-4 py-3">
-                                            ...
-                                            </td>
-                                        </tr>
-                                        <tr class="border-b">
-                                            <td class="px-4 py-3 text-center">
-                                                9
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                Wuse II
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                3
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                12
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                7
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                Andrews Peter
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                07/09/2010
-                                            </td>
-                                            <td class="px-4 py-3">
-                                                <button type="button" class="py-1 px-2 bg-primary rounded-sm text-white" > Enabled</button>
-                                            </td>
-                                            <td class="px-4 py-3">
-                                            ...
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <!-- Pagination -->
-                            <div class="container mt-8 text-cLight text-sm">
-                                <ul class="flex">
-                                    <li>
-                                        <a href="#" class="underline uppercase py-1 hover:text-primary">Prev</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="py-1 px-2 hover:text-primary">1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="py-1 px-2 hover:text-primary">2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="py-1 px-2 hover:text-primary">3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="underline uppercase py-1 hover:text-primary">Next</a>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="overflow-hidden">
+                            <table class="min-w-full border">
+                                <thead class="border-b text-tDark text-sm">
+                                    <tr class="text-left">
+                                        <th class="px-4 py-3">
+                                            S/N
+                                        </th>
+                                        <th class="px-4 py-3">
+                                            Name of Region
+                                        </th>
+                                        <th class="px-4 py-3">
+                                            Total Stations
+                                        </th>
+                                        <th class="px-4 py-3">
+                                            Total DisCos
+                                        </th>
+                                        <th class="px-4 py-3">
+                                            Total GenCos
+                                        </th>
+                                        <th class="px-4 py-3">
+                                            Created By
+                                        </th>
+                                        <th class="px-4 py-3">
+                                            Created Date
+                                        </th>
+                                        <th class="px-4 py-3">
+                                            Status
+                                        </th>
+                                        <th class="px-4 py-3">
+                                            Actions
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-xs">
+                                    <tr class="border-b">
+                                        <td class="px-4 py-3">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <button type="button" class="p-1 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-3">
+                                           ...
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-3">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <button type="button" class="p-1 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-3">
+                                           ...
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-3">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <button type="button" class="p-1 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-3">
+                                           ...
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-3">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <button type="button" class="p-1 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-3">
+                                           ...
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-3">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <button type="button" class="p-1 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-3">
+                                           ...
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-3">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <button type="button" class="p-1 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-3">
+                                           ...
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-3">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <button type="button" class="p-1 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-3">
+                                           ...
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-3">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <button type="button" class="p-1 bg-danger rounded-sm text-white" > Disabled </button>
+                                        </td>
+                                        <td class="px-4 py-3">
+                                           ...
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-3">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <button type="button" class="p-1 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-3">
+                                           ...
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                         </div>
                     </div>
                 </div>
