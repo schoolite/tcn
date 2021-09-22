@@ -14,6 +14,8 @@ module.exports = {
         danger: '#DC2050',
         success: '#008B5E',
         bGray: '#F8F9FA',
+        grayLight: '#EAF3FB',
+        lGrayLight: '#EBEBEB',
       },
       fontFamily: {
         lato: ['Lato', 'sans-serif'],
