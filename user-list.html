@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>TCN | Regions</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="bg-gray-200 text-gray-900 font-sans min-h-screen  py-5">
+        <div class="w-10/12 mx-auto relative">
+            <nav class="flex justify-between items-center">
+                <div class="">
+                    <img src="./img/logo.png" alt="logo" class="mx-auto">
+                    <span class="text-primary font-lato hidden md:hidden lg:block md:text-sm font-bold">TRANSMISSION COMPANY OF NIGERIA</span>
+                </div>
+                <div class="dropdown cursor-pointer flex gap-5 items-center font-bold font-lato">
+                    <span class="text-primary  text-sm uppercase">menu</span>
+                    <svg class="navIcon hidden" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 0.75L6 5.25L10.5 0.75" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg class="navIcon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5 11.25L9 6.75L4.5 11.25" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                       
+                </div>
+                <div class="profile flex gap-5 items-center">
+                    <img src="./img/Avatars.png" alt="logo">
+                    <div class="gap-5 items-center font-bold font-lato hidden md:hidden lg:flex">
+                        <span class="text-primary text-sm uppercase font-bold">admin name</span>
+                        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 0.75L6 5.25L10.5 0.75" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                    
+                    </div>
+                </div>
+            </nav>
+            <div class="navMenu hidden absolute w-full z-50">
+                <div class="transition-transform shadow-xl rounded-2xl mt-4 max-w-sm mx-auto p-7 md:relative bg-white md:max-w-3xl md:mx-auto md:px-10 md:py-12 lg:max-w-full lg:px-8 lg:py-14">
+                    <div class="md:bg-white md:absolute md:w-8 md:h-8 md:top-0 md:left-2/4 md:transform md:rotate-45"></div>
+                    <div class="grid grid-rows-6 gap-4 md:grid md:grid-rows-4 md:grid-flow-col md:gap-4 lg:grid lg:grid-rows-2 lg:grid-flow-col lg:grid-cols-3 lg:gap-4">
+                        <div class="p-4 rounded-lg border flex gap-5 md:py-4 md:px-2 lg:py-5 lg:px-3">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <div class="font-lato w-44">
+                                <h2 class="text-lg text-tDark font-lato font-semibold">Dashboard</h2>
+                                <span class="hidden text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                            </div>
+                                
+                        </div>
+                        <div class="p-4 rounded-lg border flex gap-5 md:py-4 md:px-2 lg:py-5 lg:px-3">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <div class="font-lato w-44">
+                                <h2 class="text-lg text-tDark font-semibold">Regions</h2>
+                                <span class="hidden text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                            </div>
+                                
+                        </div>
+                        <div class="p-4 rounded-lg border flex gap-5 md:py-4 md:px-2 lg:py-5 lg:px-3">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <div class="font-lato w-44">
+                                <h2 class="text-lg text-tDark font-semibold">Stations</h2>
+                                <span class="hidden text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                            </div>
+                                
+                        </div>
+                        <div class="p-4 rounded-lg border flex gap-5 md:py-4 md:px-2 lg:py-5 lg:px-3">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <div class="font-lato w-44">
+                                <h2 class="text-lg text-tDark font-semibold">Departments</h2>
+                                <span class="hidden text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                            </div>
+                                
+                        </div>
+                        <div class="p-4 rounded-lg border flex gap-5 md:py-4 md:px-2 lg:py-5 lg:px-3">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <div class="font-lato w-44">
+                                <h2 class="text-lg text-tDark font-semibold">Access Control</h2>
+                                <span class="hidden text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                            </div>
+                                
+                        </div>
+                        <div class="p-4 rounded-lg border flex gap-5 md:py-4 md:px-2 lg:py-5 lg:px-3">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <div class="font-lato w-44">
+                                <h2 class="text-lg text-tDark font-semibold">System Users</h2>
+                                <span class="hidden text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                            </div>
+                                
+                        </div>
+                        <div class="p-4 rounded-lg border flex gap-5 md:py-4 md:px-2 lg:py-5 lg:px-3">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <div class="font-lato w-44">
+                                <h2 class="text-lg text-tDark font-semibold">Settings</h2>
+                                <span class="hidden text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                            </div>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uppercase font-medium text-xs text-cLight mt-16 mb-8"> System users </div>
+            <!-- Regions Section -->
+            <div class="Region bg-white rounded-lg px-8 py-7 shadow">
+                <div class="flex justify-between mb-11 items-center">
+                    <h4 class="text-tDark text-base font-bold"> List of Users</h4>
+                    <button class="py-2 px-3 border rounded text-xs font-medium uppercase text-primary flex items-center" type="button" name="add_region" id="add_region"> 
+                        <svg class="inline-block mr-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 0.75V11.25" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M0.749756 6H11.2498" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> add system users     
+                    </button>
+                </div>
+                <div class="md:flex justify-between items-baseline mb-8">
+                    <p class="font-normal text-sm text-tLight mb-3 md:mb-0"> Showing 10 of 32 Results </p>
+                    <form class=" w-full md:w-3/6 lg:w-1/4" action="/" method="post">
+                        <div class="relative">
+                            <label class="sr-only text-xs">Search</label>
+                            <input class="py-2 pl-3 pr-7 text-xs rounded-lg outline-none border w-full text-cLight" type="text" name="text" id="tetx" placeholder="Search...">
+                            <svg class="absolute top-2 right-2" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.875 13.5C10.9816 13.5 13.5 10.9816 13.5 7.875C13.5 4.7684 10.9816 2.25 7.875 2.25C4.7684 2.25 2.25 4.7684 2.25 7.875C2.25 10.9816 4.7684 13.5 7.875 13.5Z" stroke="#333333" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.7496 15.7501L11.8496 11.8501" stroke="#3F4E5B" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                        
+                        </div>
+                   </form>
+                </div>
+                <div class="Region_table">
+                    <div class="overflow-x-auto">
+                        <div class="align-middle inline-block min-w-full">
+                        <div class="overflow-hidden">
+                            <table class="min-w-full border">
+                                <thead class="border-b text-tDark text-sm">
+                                    <tr class="text-left">
+                                        <th class="px-4 py-3">
+                                            S/N
+                                        </th>
+                                        <th class="px-4 py-3">
+                                            Name of Region
+                                        </th>
+                                        <th class="px-4 py-3">
+                                            Total Stations
+                                        </th>
+                                        <th class="px-4 py-3">
+                                            Total DisCos
+                                        </th>
+                                        <th class="px-4 py-3">
+                                            Total GenCos
+                                        </th>
+                                        <th class="px-4 py-3">
+                                            Created By
+                                        </th>
+                                        <th class="px-4 py-3">
+                                            Created Date
+                                        </th>
+                                        <th class="px-4 py-3">
+                                            Status
+                                        </th>
+                                        <th class="px-4 py-3">
+                                            Actions
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-xs">
+                                    <tr class="border-b">
+                                        <td class="px-4 py-3">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <button type="button" class="p-1 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-3">
+                                           ...
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-3">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <button type="button" class="p-1 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-3">
+                                           ...
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-3">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <button type="button" class="p-1 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-3">
+                                           ...
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-3">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <button type="button" class="p-1 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-3">
+                                           ...
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-3">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <button type="button" class="p-1 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-3">
+                                           ...
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-3">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <button type="button" class="p-1 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-3">
+                                           ...
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-3">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <button type="button" class="p-1 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-3">
+                                           ...
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-3">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <button type="button" class="p-1 bg-danger rounded-sm text-white" > Disabled </button>
+                                        </td>
+                                        <td class="px-4 py-3">
+                                           ...
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-3">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <button type="button" class="p-1 bg-primary rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-3">
+                                           ...
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Menu Toggler -->
+    <script>
+        window.addEventListener('load', (e)=> {
+            const menu = document.querySelector('.dropdown');
+            const navMenu = document.querySelector('.navMenu');
+
+            menu.addEventListener('click', (e)=>{
+                navMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
