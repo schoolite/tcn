@@ -165,88 +165,47 @@
                 <!-- bread crumbs -->
                 <div class="uppercase font-medium text-xs text-cLight mt-16 mb-8"><span  class="active:bg-green-700 hover:text-green-400 uppercase text-xs mx-1">station</span><span class="mx-2" >/</span><span  class="active:bg-green-700 hover:text-green-400 uppercase text-xs mx-1">Add station</span> </div>
                 <!-- bread crumbs -->
+
                 <!-- Add Region -->
                 <div class="p-12 bg-white shadow-lg rounded-xl">
                     <div>
-                        <h1 class="mb-6 font-lato font-bold text-2xl">Add System Users</h1>
+                        <h1 class="mb-6 font-lato font-bold text-2xl">Add Access Priviledges</h1>
                     </div>
                     <div>
                         <form class="" method="post">
                             <div class="lg:flex lg:flex-row lg:gap-8 ">
-                                <div class="flex flex-row lg:flex lg:flex-col">
-                                    <div class="mb-1 mx-8">
-                                        <svg width="131" height="131" viewBox="0 0 131 131" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="65.5" cy="65.5" r="65.5" fill="#EAFBFA"/>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M55.1348 56.3632C55.1348 55.6855 55.6841 55.1362 56.3617 55.1362H76.2939C76.9715 55.1362 77.5208 55.6855 77.5208 56.3632V76.2954C77.5208 76.973 76.9715 77.5223 76.2939 77.5223H56.3617C55.6841 77.5223 55.1348 76.973 55.1348 76.2954V56.3632Z" stroke="#22ABA6" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M61.9749 63.8419C63.0052 63.8419 63.8404 63.0066 63.8404 61.9763C63.8404 60.9461 63.0052 60.1108 61.9749 60.1108C60.9446 60.1108 60.1094 60.9461 60.1094 61.9763C60.1094 63.0066 60.9446 63.8419 61.9749 63.8419Z" stroke="#22ABA6" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M77.5218 70.0601L71.3034 63.8418L57.623 77.5222" stroke="#22ABA6" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
+                                <div class="flex flex-col gap-4 mb-4">
+                                    <div class="flex flex-col">
+                                        <span class="uppercase font-lato font-normal text-xs mb-1 text-gray-600">Name of department</span>
+                                        <input type="text" class="w-full lg:w-96 lg:py-2 rounded border-gray-300 ">
                                     </div>
-                                    <p class="align-middle lg:m-0 mt-12 font-lato font-extrabold text-base mb-2 text-gray-600 flex justify-center">upload a image</p>  
+                                    <div class="md:flex md:flex-col lg:flex lg:flex-col w-full">
+                                        <span class="uppercase font-normal text-xs mb-1 text-gray-600">description of priviledge</span>
+                                        <div>
+                                        <input class="w-full border rounded border-gray-300 lg:w-96 h-20" type="text">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="lg:flex lg:flex-col lg:gap-8">
-                                    <div class="lg:flex lg:flex-row lg:gap-8">
-                                        <div class="flex flex-col gap-4 mb-4">
-                                            <div class="flex flex-col lg:mb-0 mb-1">
-                                                <span class="uppercase font-lato font-normal text-xs mb-2 text-gray-600">full name</span>
-                                                <input type="text" class="w-full lg:w-96 lg:py-2 rounded border-gray-300 ">
-                                            </div>
-                                            <div class="flex flex-col mb-1">
-                                                <span class="uppercase font-lato font-normal text-xs mb-2 text-gray-600">phone</span>
-                                                <input type="text" class="w-full lg:w-96 lg:py-2 rounded border-gray-300 ">
-                                            </div>
-                                            <div class="flex flex-col mb-1">
-                                                <span class="uppercase font-lato font-normal text-xs mb-2 text-gray-600">Service number</span>
-                                                <input type="text" class="w-full lg:w-96 lg:py-2 rounded border-gray-300 ">
-                                            </div>
-                                            <div class="flex flex-col mb-1">
-                                                <span class="uppercase font-lato font-normal text-xs mb-2 text-gray-600">Station</span>
-                                                <select name="pets" id="pet-select" class="w-full lg:w-96  lg:py-2 rounded border-gray-300 text-gray-400">
-                                                    <option value="" class="font-lato text-gray-300"><p class="font-lato text-xs text-gray-300 ">Select Status</p></option>
-                                                </select>
-                                            </div>
-                                            <div class="flex flex-col mb-1">
-                                                <span class="uppercase font-lato font-normal text-xs mb-2 text-gray-600">access right</span>
-                                                <select name="pets" id="pet-select" class="w-full lg:w-96  lg:py-2 rounded border-gray-300 text-gray-400">
-                                                    <option value="" class="font-lato text-gray-300"><p class="font-lato text-xs text-gray-300 ">Select Status</p></option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="flex flex-col gap-4"> 
-                                            <div class="flex flex-col lg:mb-0 mb-1">
-                                                <span class="uppercase font-lato font-normal text-xs mb-2 text-gray-600">email</span>
-                                                <input type="email" class="w-full lg:w-96 lg:py-2 rounded border-gray-300" required>
-                                            </div>
-                                            <div class="flex flex-col mb-1">
-                                                <span class="uppercase font-lato font-normal text-xs mb-2 text-gray-600">gender</span>
-                                                <select name="pets" id="pet-select" class="w-full lg:w-96  lg:py-2 rounded border-gray-300 text-gray-400">
-                                                    <option value="" class="font-lato text-gray-300"><p class="font-lato text-xs text-gray-300">Select Station type</p></option>
-                                                </select>
-                                            </div>
-                                            <div class="flex flex-col mb-1">
-                                                <span class="uppercase font-lato font-normal text-xs mb-2 text-gray-600">position</span>
-                                                <input type="text" class="w-full lg:w-96 lg:py-2 rounded border-gray-300 ">
-                                            </div>
-                                            <div class="flex flex-col mb-1">
-                                                <span class="uppercase font-lato font-normal text-xs mb-2 text-gray-600">department</span>
-                                                <select name="pets" id="pet-select" class="w-full lg:w-96  lg:py-2 rounded border-gray-300 text-gray-400">
-                                                    <option value="" class="font-lato text-gray-300"><p class="font-lato text-xs text-gray-300 ">Select Status</p></option>
-                                                </select>
-                                            </div>
-                                            <div class="flex flex-col mb-1">
-                                                <span class="uppercase font-lato font-normal text-xs mb-2 text-gray-600">password</span>
-                                                <input type="password" class="w-full lg:w-96 lg:py-2 rounded border-gray-300 ">
-                                            </div>
-                                        </div>
+                                <div class="flex flex-col gap-4"> 
+                                    <div class="flex flex-col lg:mb-0 mb-1">
+                                        <span class="uppercase font-lato font-normal text-xs mb-1 text-gray-600">Status</span>
+                                        <select name="pets" id="pet-select" class="w-full lg:w-96  lg:py-2 rounded border-gray-300 text-gray-400">
+                                            <option value="" class="font-lato text-gray-300"><p class="font-lato text-xs text-gray-300">Select Station type</p></option>
+                                        </select>
                                     </div>
-                                    <div class="mt-2">
-                                        <button class="text-white bg-blue-900 uppercase px-4 py-3 rounded-lg font-lato font-normal text-xs">add system user</button>
+                                    <div class="flex flex-col mb-1">
+                                        <span class="uppercase font-lato font-normal text-xs mb-1 text-gray-600">Permission list</span>
+                                        <select name="pets" id="pet-select" class="w-full lg:w-96  lg:py-2 rounded border-gray-300 text-gray-400">
+                                            <option value="" class="font-lato text-gray-300"><p class="font-lato text-xs text-gray-300">Select Station type</p></option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
                         </form>
+                        <div class="mt-5">
+                            <button class="text-white bg-blue-900 uppercase px-4 py-3 rounded-lg font-lato font-normal text-xs">add priviledge</button>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
