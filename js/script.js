@@ -74,11 +74,14 @@
 function options(ele){
     
    
-    if(ele.classList.contains('show-class')){
-        const trOption = document.querySelector( '.tr-option-btn.show-class .tr-options');
-        if(trOption){
-            trOption.remove();
-        }
+    if(ele.classList.contains('show-option')){
+        const parentDom = document.querySelector( '.tr-option-btn.show-option');
+        const trOption = parentDom.nextElementSibling;
+
+        console.log(trOption);
+        // if(trOption){
+        //     trOption.remove();
+        // }
     }else{
         let templateString = `<div class="tr-options z-50 bg-white absolute w-24 -left-4 top-6">
                             <ul class="list border rounded-lg text-xs font-medium">
