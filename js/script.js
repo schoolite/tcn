@@ -10,6 +10,9 @@
         const userMenu = document.querySelector('.userMenu');
         const userCaret = document.querySelectorAll('.userIcon');
 
+        // Table
+        const tableDom = document.querySelector('.details');
+
         let toggler = function (el){
             el.classList.toggle('hidden');
         }
@@ -43,47 +46,26 @@
             addToggler(navMenu, navCaret)
         });
 
+        const trOptionBtns = document.querySelectorAll('.tr-option-btn');
+        trOptionBtns.forEach(trOptionBtn => {
+            trOptionBtn.addEventListener('click', function(btn){
+                toggleOption(btn.currentTarget, tableDom);
 
-
-// Dropdown
-
-// const dropDown = document.querySelectorAll('.dropdownList');
-
-// dropDown.forEach( el => {
-//     el.addEventListener('click', (e) => {
-//         let target = e.currentTarget;
-//         let childDom = target.children[1];
-
-//         childDom.innerHTML = ' ';
-
-//         let templateString = `   <div class="z-50 bg-white absolute w-24 -left-4 top-6">
-//                                     <ul class="list border rounded-lg text-xs font-medium">
-//                                         <li class="p-2 border-b cursor-pointer"><a href="#"> Edit</a></li>
-//                                         <li  class="p-2 border-b cursor-pointer"><a href="#"> View Region </a></li>
-//                                         <li  class="p-2 border-b cursor-pointer"><a href="#"> View Discos </a></li>
-//                                         <li  class="p-2 border-b cursor-pointer"><a href="#"> Change Status</a></li>
-//                                         <li  class="p-2 cursor-pointer"><a href="#"> Audit Trail</a></li>
-//                                     </ul> 
-//                                 </div>`;
-
-//     });
-// });
-
+            })
+        });
+        
 });
 
-function options(ele){
-    
-   
-    if(ele.classList.contains('show-option')){
-        const parentDom = document.querySelector( '.tr-option-btn.show-option');
-        const trOption = parentDom.nextElementSibling;
+function cleartrOptions(){
+    const trOptions = document.querySelectorAll('.tr-options');
+    trOptions.forEach(trOptionEle => trOptionEle.remove());
+};
 
-        console.log(trOption);
-        // if(trOption){
-        //     trOption.remove();
-        // }
-    }else{
-        let templateString = `<div class="tr-options z-50 bg-white absolute w-24 -left-4 top-6">
+function toggleOption(ele, tableDom){
+            
+    cleartrOptions();
+
+    let templateString = `<div class="tr-options z-50 bg-white absolute w-24 -left-4 top-6">
                             <ul class="list border rounded-lg text-xs font-medium">
                                 <li class="p-2 border-b cursor-pointer"><a href="#"> Edit</a></li>
                                 <li  class="p-2 border-b cursor-pointer"><a href="#"> View Region </a></li>
@@ -92,12 +74,21 @@ function options(ele){
                                 <li  class="p-2 cursor-pointer"><a href="#"> Audit Trail</a></li>
                             </ul> 
                         </div>`;
-        ele.insertAdjacentHTML('beforebegin', templateString); 
+    
+    if(ele.classList.contains('show-option')){
+        ele.classList.remove('show-option'); 
+        if(ele.nextSibling){
+            ele.nextSibling.remove();
+        }
+    }else{
+        ele.insertAdjacentHTML('afterend', templateString); 
         ele.classList.add('show-option'); 
+
+        if(tableDom.scrollHeight > tableDom.clientHeight){
+            ele.nextSibling.classList.replace('top-6', 'bottom-6');
+        }
     }
 
+   
+
 }
-
-
-    
-    
