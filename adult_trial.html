@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>TCN | Regions</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="bg-gray-200 text-gray-900 font-sans min-h-screen  py-5">
+        <div class="w-10/12 mx-auto relative">
+            <nav class="flex justify-between items-center">
+                <div class="">
+                    <img src="./img/logo.png" alt="logo" class="mx-auto">
+                    <span class="text-primary font-lato hidden md:hidden lg:block md:text-sm font-bold">TRANSMISSION COMPANY OF NIGERIA</span>
+                </div>
+                <div class="dropdown cursor-pointer flex gap-3 items-center font-bold font-lato">
+                    <div class="text-primary text-sm uppercase">menu</div>
+                    <div class="flex items-center">
+                        <span class="navIcon pt-3 hidden transition-transform">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 0.75L6 5.25L10.5 0.75" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <span class="navIcon transition-transform">
+                            <svg  width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.5 11.25L9 6.75L4.5 11.25" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>    
+                        </span>                   
+                    </div>
+                </div>
+                <div class="profile flex gap-5 relative cursor-pointer items-center">
+                    <img src="./img/Avatars.png" alt="logo">
+                    <div class="gap-3 items-center font-bold font-lato hidden md:hidden lg:flex">
+                        <div class="text-primary text-sm uppercase font-bold">admin name</div>
+                        <div class="flex items-center">
+                            <span class="userIcon pt-3 hidden transition-transform">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 0.75L6 5.25L10.5 0.75" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span class="userIcon transition-transform">
+                                <svg  width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.5 11.25L9 6.75L4.5 11.25" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </span>                   
+                        </div>                  
+                    </div>
+                </div>
+
+                <!-- UserMenu -->
+                <div class="userMenu hidden absolute w-2/6 sm:w-1/4 md:w-1/5 z-50 right-0 top-16">
+                    <div class="transition-transform shadow-xl rounded-lg relative bg-white">
+                        <!-- <div class="md:bg-white absolute md:w-8 md:h-8 md:top-0 left-28 md:transform md:rotate-45"></div> -->
+                        <ul>
+                            <li class="py-2 px-4 cursor-pointer hover:bg-grayLight rounded-t-lg"><a class="uppercase font-medium text-xs" href="#"> Profile </a></li>
+                            <li class="border-b border-t py-2 px-4 hover:bg-grayLight cursor-pointer"><a class="uppercase font-medium text-xs" href="#"> Settings </a></li>
+                            <li class="py-2 px-4 hover:bg-grayLight cursor-pointer rounded-b-lg"><a class="uppercase font-medium text-xs" href="#"> Log Out </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Navigation Menu -->
+            <div class="navMenu hidden absolute w-full z-40">
+                <div class="transition-transform shadow-xl rounded-2xl mt-4 max-w-sm mx-auto p-7 md:relative bg-white md:max-w-3xl md:mx-auto md:px-10 md:py-12 lg:max-w-full lg:px-8 lg:py-14">
+                    <div class="md:bg-white md:absolute md:w-8 md:h-8 md:top-0 md:left-2/4 md:transform md:rotate-45"></div>
+                    <div class="grid grid-rows-6 gap-4 md:grid md:grid-rows-4 md:grid-flow-col md:gap-4 lg:grid lg:grid-rows-2 lg:grid-flow-col lg:grid-cols-3 lg:gap-4">
+                        <div class="group cursor-pointer p-4 rounded-lg border flex gap-5 hover:bg-primary md:py-4 md:px-2 lg:py-5 lg:px-3">
+                            <svg class="fill-current text-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <div class="font-lato w-44">
+                                <h2 class="text-lg group-hover:text-white text-tLight text-tDark font-lato font-semibold">Dashboard</h2>
+                                <span class="hidden group-hover:text-white text-tLight text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                            </div>
+                                
+                        </div>
+                        <div class="group cursor-pointer p-4 rounded-lg border flex gap-5 hover:bg-primary md:py-4 md:px-2 lg:py-5 lg:px-3">
+                            <svg class="fill-current text-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <div class="font-lato w-44">
+                                <h2 class="text-lg group-hover:text-white text-tLight text-tDark font-semibold">Regions</h2>
+                                <span class="hidden group-hover:text-white text-tLight text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                            </div>
+                                
+                        </div>
+                        <div class="group cursor-pointer p-4 rounded-lg border flex gap-5 hover:bg-primary md:py-4 md:px-2 lg:py-5 lg:px-3">
+                            <svg class="fill-current text-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <div class="font-lato w-44">
+                                <h2 class="text-lg group-hover:text-white text-tLight text-tDark font-semibold">Stations</h2>
+                                <span class="hidden group-hover:text-white text-tLight text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                            </div>
+                                
+                        </div>
+                        <div class="group cursor-pointer p-4 rounded-lg border flex gap-5 hover:bg-primary md:py-4 md:px-2 lg:py-5 lg:px-3">
+                            <svg class="fill-current text-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <div class="font-lato w-44">
+                                <h2 class="text-lg group-hover:text-white text-tLight text-tDark font-semibold">Departments</h2>
+                                <span class="hidden group-hover:text-white text-tLight text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                            </div>
+                                
+                        </div>
+                        <div class="group cursor-pointer p-4 rounded-lg border flex gap-5 hover:bg-primary md:py-4 md:px-2 lg:py-5 lg:px-3">
+                            <svg class="fill-current text-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <div class="font-lato w-44">
+                                <h2 class="text-lg group-hover:text-white text-tLight text-tDark font-semibold">Access Control</h2>
+                                <span class="hidden group-hover:text-white text-tLight text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                            </div>
+                                
+                        </div>
+                        <div class="group cursor-pointer p-4 rounded-lg border flex gap-5 hover:bg-primary md:py-4 md:px-2 lg:py-5 lg:px-3">
+                            <svg class="fill-current text-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <div class="font-lato w-44">
+                                <h2 class="text-lg group-hover:text-white text-tLight text-tDark font-semibold">System Users</h2>
+                                <span class="hidden group-hover:text-white text-tLight text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                            </div>
+                                
+                        </div>
+                        <div class="group cursor-pointer p-4 rounded-lg border flex gap-5 hover:bg-primary md:py-4 md:px-2 lg:py-5 lg:px-3">
+                            <svg class="fill-current text-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 22C17.5226 22 21.9998 17.5229 21.9998 12C21.9998 6.47715 17.5226 2 11.9998 2C6.47691 2 1.99976 6.47715 1.99976 12C1.99976 17.5229 6.47691 22 11.9998 22Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 4.92993L9.16993 9.16993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 14.8298L19.0698 19.0698" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16993L19.0698 4.92993" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.8298 9.16989L18.3598 5.63989" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.92993 19.0698L9.16993 14.8298" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <div class="font-lato w-44">
+                                <h2 class="group-hover:text-white text-lg text-tDark font-semibold">Settings</h2>
+                                <span class="hidden group-hover:text-white text-tLight md:block md:text-xs">Id amet, aliquet sit elit vestibulum lorem placerat duis semper.</span>
+                            </div>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Breadcrumb -->
+            <nav class="my-8 uppercase">
+                <ol class="list-reset flex text-grey-dark text-cLight">
+                  <li><a href="#" class="font-normal text-xs">Audit Trail</a></li>
+                </ol>
+            </nav>
+            
+            <!-- Regions Section -->
+            <div class="Region bg-white rounded-lg px-8 py-7 shadow">
+                <div class="flex justify-between mb-11 items-center">
+                    <h4 class="text-tDark text-base font-bold"> Audit Trail </h4>
+                    
+                </div>
+                <div class="md:flex justify-between items-baseline mb-8">
+                    <p class="font-normal text-sm text-tLight mb-3 md:mb-0"> Showing <span>10</span> of <span>32</span> Results </p>
+                    <form class=" w-full md:w-3/6 lg:w-1/4" action="/" method="post">
+                        <div class="relative">
+                            <label class="sr-only text-xs">Search</label>
+                            <input class="py-2 pl-3 pr-7 text-xs rounded-lg outline-none border w-full text-cLight" type="text" name="text" id="tetx" placeholder="Search...">
+                            <svg class="absolute top-2 right-2" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.875 13.5C10.9816 13.5 13.5 10.9816 13.5 7.875C13.5 4.7684 10.9816 2.25 7.875 2.25C4.7684 2.25 2.25 4.7684 2.25 7.875C2.25 10.9816 4.7684 13.5 7.875 13.5Z" stroke="#333333" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.7496 15.7501L11.8496 11.8501" stroke="#3F4E5B" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                        
+                        </div>
+                   </form>
+                </div>
+
+                <!-- Region table -->
+                <div class="Region_table">
+                    <div class="relative overflow-x-auto">
+                        <div class="align-middle inline-block min-w-full">
+                            <table class="min-w-full border">
+                                <thead class="border-b text-tDark text-sm">
+                                    <tr class="text-left">
+                                        <th class="px-4 py-2">
+                                            S/N
+                                        </th>
+                                        <th class="px-4 py-2">
+                                            Action Performed
+                                        </th>
+                                        <th class="px-4 py-2">
+                                            Performed by
+                                        </th>
+                                        <th class="px-4 py-2">
+                                            Date Performed
+                                        </th>
+                                        <th class="px-4 py-2">
+                                            Actions
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-sm">
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-left">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrew Peters
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrew Peters
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 text-primary py-1">
+                                            View details
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-left">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrew Peters
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrew Peters
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 text-primary py-1">
+                                            View details
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-left">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrew Peters
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrew Peters
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 text-primary py-1">
+                                            View details
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-left">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrew Peters
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrew Peters
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 text-primary py-1">
+                                            View details
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-left">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrew Peters
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrew Peters
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 text-primary py-1">
+                                            View details
+                                        </td>
+                                       
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-left">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrew Peters
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrew Peters
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 text-primary py-1">
+                                            View details
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-left">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrew Peters
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrew Peters
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 text-primary py-1">
+                                            View details
+                                        </td>
+                                       
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-left">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrew Peters
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrew Peters
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 text-primary py-1">
+                                            View details
+                                        </td>
+                                       
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-left">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrew Peters
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrew Peters
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 text-primary py-1">
+                                            View details
+                                        </td>
+                                       
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-left">
+                                            1
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrew Peters
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrew Peters
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 text-primary py-1">
+                                            View details
+                                        </td>
+                                        
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="container mt-8 text-cLight text-sm">
+                        <ul class="flex">
+                            <li>
+                                <a href="#" class="underline uppercase py-1 hover:text-primary">Prev</a>
+                            </li>
+                            <li>
+                                <a href="#" class="py-1 px-2 hover:text-primary">1</a>
+                            </li>
+                            <li>
+                                <a href="#" class="py-1 px-2 hover:text-primary">2</a>
+                            </li>
+                            <li>
+                                <a href="#" class="py-1 px-2 hover:text-primary">3</a>
+                            </li>
+                            <li>
+                                <a href="#" class="underline uppercase py-1 hover:text-primary">Next</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Script File -->
+    <script src="js/script.js"></script>
+</body>
+</html>
