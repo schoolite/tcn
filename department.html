@@ -213,7 +213,7 @@
 
                 <!-- Departments table -->
                 <div class="Departments_table">
-                    <div class="relative overflow-x-auto overflow-y-hidden">
+                    <div class="details relative overflow-x-auto" data-target="miniList">
                         <div class="align-middle inline-block min-w-full">
                             <table class="min-w-full border">
                                 <thead class="border-b text-tDark text-sm">
@@ -222,13 +222,13 @@
                                             S/N
                                         </th>
                                         <th class="px-4 py-2">
-                                            Name of Depts.
+                                            Name of Dept
                                         </th>
                                         <th class="px-4 py-2">
                                             Total Sys. Users
                                         </th>
                                         <th class="px-4 py-2">
-                                            Total Depts.
+                                            Total Dept
                                         </th>
                                         <th class="px-4 py-2">
                                             Created By
@@ -259,6 +259,37 @@
                                             12
                                         </td>
                                         <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            
+                                            <div class="cursor-pointer tr-option-btn" >
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            2
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
                                             7
                                         </td>
                                         <td class="px-4 py-1">
@@ -271,24 +302,25 @@
                                             <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
                                         </td>
                                         <td class="px-4 py-1 relative">
-                                            <span class="cursor-pointer">
-                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
+                                            <div class="dropdownList w-full" >
+                                                <div class="cursor-pointer tr-option-btn" >
+                                                    <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+    
+                                                
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr class="border-b">
                                         <td class="px-4 py-1 text-center">
-                                            1
+                                            3
                                         </td>
                                         <td class="px-4 py-1">
                                             Wuse II
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            3
                                         </td>
                                         <td class="px-4 py-1">
                                             12
@@ -306,24 +338,133 @@
                                             <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
                                         </td>
                                         <td class="px-4 py-1 relative">
-                                            <span class="cursor-pointer">
-                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
+                                            <div class="dropdownList w-full" >
+                                                <div class="cursor-pointer tr-option-btn" >
+                                                    <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+    
+                                                
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr class="border-b">
                                         <td class="px-4 py-1 text-center">
-                                            1
+                                            4
                                         </td>
                                         <td class="px-4 py-1">
                                             Wuse II
                                         </td>
                                         <td class="px-4 py-1">
                                             3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <div class="dropdownList w-full" >
+                                                <div class="cursor-pointer tr-option-btn" >
+                                                    <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+    
+                                                
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            5
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            12
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <div class="dropdownList w-full" >
+                                                <div class="cursor-pointer tr-option-btn" >
+                                                    <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+    
+                                               
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            6
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <div class="dropdownList w-full" >
+                                                <div class="cursor-pointer tr-option-btn" >
+                                                    <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+    
+                                                
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            7
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
                                         </td>
                                         <td class="px-4 py-1">
                                             12
@@ -341,18 +482,21 @@
                                             <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
                                         </td>
                                         <td class="px-4 py-1 relative">
-                                            <span class="cursor-pointer">
-                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
+                                            <div class="dropdownList w-full" >
+                                                <div class="cursor-pointer tr-option-btn" >
+                                                    <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+    
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr class="border-b">
                                         <td class="px-4 py-1 text-center">
-                                            1
+                                            8
                                         </td>
                                         <td class="px-4 py-1">
                                             Wuse II
@@ -362,6 +506,39 @@
                                         </td>
                                         <td class="px-4 py-1">
                                             12
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Andrews Peter
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            07/09/2010
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
+                                        </td>
+                                        <td class="px-4 py-1 relative">
+                                            <div class="dropdownList w-full" >
+                                                <div class="cursor-pointer tr-option-btn" >
+                                                    <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+    
+                                                
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="px-4 py-1 text-center">
+                                            9
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            Wuse II
+                                        </td>
+                                        <td class="px-4 py-1">
+                                            3
                                         </td>
                                         <td class="px-4 py-1">
                                             7
@@ -376,27 +553,27 @@
                                             <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
                                         </td>
                                         <td class="px-4 py-1 relative">
-                                            <span class="cursor-pointer">
-                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
+                                            <div class="dropdownList w-full" >
+                                                <div class="cursor-pointer tr-option-btn" >
+                                                    <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr class="border-b">
                                         <td class="px-4 py-1 text-center">
-                                            1
+                                            10
                                         </td>
                                         <td class="px-4 py-1">
                                             Wuse II
                                         </td>
                                         <td class="px-4 py-1">
                                             3
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            12
                                         </td>
                                         <td class="px-4 py-1">
                                             7
@@ -411,214 +588,42 @@
                                             <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
                                         </td>
                                         <td class="px-4 py-1 relative">
-                                            <span class="cursor-pointer">
-                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                        </td>
-                                    </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-center">
-                                            1
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            Wuse II
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            3
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            12
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            7
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            Andrews Peter
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            07/09/2010
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
-                                        </td>
-                                        <td class="px-4 py-1 relative">
-                                            <span class="cursor-pointer">
-                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                        </td>
-                                    </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-center">
-                                            1
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            Wuse II
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            3
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            12
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            7
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            Andrews Peter
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            07/09/2010
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
-                                        </td>
-                                        <td class="px-4 py-1 relative">
-                                            <span class="cursor-pointer">
-                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                        </td>
-                                    </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-center">
-                                            1
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            Wuse II
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            3
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            12
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            7
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            Andrews Peter
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            07/09/2010
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
-                                        </td>
-                                        <td class="px-4 py-1 relative">
-                                            <span class="cursor-pointer">
-                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                        </td>
-                                    </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-center">
-                                            1
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            Wuse II
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            3
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            12
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            7
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            Andrews Peter
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            07/09/2010
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
-                                        </td>
-                                        <td class="px-4 py-1 relative">
-                                            <span class="cursor-pointer">
-                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                        </td>
-                                    </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-center">
-                                            1
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            Wuse II
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            3
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            12
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            7
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            Andrews Peter
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            07/09/2010
-                                        </td>
-                                        <td class="px-4 py-1">
-                                            <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
-                                        </td>
-                                        <td class="px-4 py-1 relative">
-                                            <span class="cursor-pointer">
-                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
+                                            <div class="dropdownList w-full" >
+                                                <div class="cursor-pointer tr-option-btn" >
+                                                    <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+
+                                            </div>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
+                    </div>
 
-                        <!-- Pagination -->
-                        <div class="container mt-8 text-cLight text-sm">
-                            <ul class="flex">
-                                <li>
-                                    <a href="#" class="underline uppercase py-1 hover:text-primary">Prev</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="py-1 px-2 hover:text-primary">1</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="py-1 px-2 hover:text-primary">2</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="py-1 px-2 hover:text-primary">3</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="underline uppercase py-1 hover:text-primary">Next</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <!-- Pagination -->
+                    <div class="container mt-8 text-cLight text-sm">
+                        <ul class="flex">
+                            <li>
+                                <a href="#" class="underline uppercase py-1 hover:text-primary">Prev</a>
+                            </li>
+                            <li>
+                                <a href="#" class="py-1 px-2 hover:text-primary">1</a>
+                            </li>
+                            <li>
+                                <a href="#" class="py-1 px-2 hover:text-primary">2</a>
+                            </li>
+                            <li>
+                                <a href="#" class="py-1 px-2 hover:text-primary">3</a>
+                            </li>
+                            <li>
+                                <a href="#" class="underline uppercase py-1 hover:text-primary">Next</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

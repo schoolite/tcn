@@ -10,8 +10,6 @@
         const userMenu = document.querySelector('.userMenu');
         const userCaret = document.querySelectorAll('.userIcon');
 
-        // Table
-        const tableDom = document.querySelector('.details');
 
         let toggler = function (el){
             el.classList.toggle('hidden');
@@ -49,8 +47,8 @@
         const trOptionBtns = document.querySelectorAll('.tr-option-btn');
         trOptionBtns.forEach(trOptionBtn => {
             trOptionBtn.addEventListener('click', function(btn){
-                toggleOption(btn.currentTarget, tableDom);
-
+                let ParentElement = trOptionBtn.closest('.details');
+                toggleOption(btn.currentTarget, ParentElement);
             })
         });
         
@@ -65,7 +63,7 @@ function toggleOption(ele, tableDom){
             
     cleartrOptions();
 
-    let templateString = `<div class="tr-options z-50 bg-white absolute w-24 -left-4 top-6">
+    let templateStringOne = `<div class="tr-options z-50 bg-white absolute w-24 -left-4 top-6">
                             <ul class="list border rounded-lg text-xs font-medium">
                                 <li class="p-2 border-b cursor-pointer"><a href="#"> Edit</a></li>
                                 <li  class="p-2 border-b cursor-pointer"><a href="#"> View Region </a></li>
@@ -74,6 +72,19 @@ function toggleOption(ele, tableDom){
                                 <li  class="p-2 cursor-pointer"><a href="#"> Audit Trail</a></li>
                             </ul> 
                         </div>`;
+
+    let templateStringTwo = `<div class="tr-options z-50 bg-white absolute w-24 -left-4 top-6">
+                                <ul class="list border rounded-lg text-xs font-medium">
+                                    <li class="p-2 border-b cursor-pointer"><a href="#"> Edit</a></li>
+                                    <li  class="p-2 border-b cursor-pointer"><a href="#"> View Users </a></li>
+                                    <li  class="p-2 border-b cursor-pointer"><a href="#"> Change Status </a></li>
+                                </ul> 
+                            </div>`;
+    let templateStringThree = `<div class="tr-options z-50 bg-white absolute w-24 -left-4 top-6">
+                                <ul class="list border rounded-lg text-xs font-medium">
+                                    <li class="p-2 border-b cursor-pointer"><a href="#"> Download </a></li>
+                                </ul> 
+                            </div>`;
     
     if(ele.classList.contains('show-option')){
         ele.classList.remove('show-option'); 
@@ -81,11 +92,18 @@ function toggleOption(ele, tableDom){
             ele.nextSibling.remove();
         }
     }else{
-        ele.insertAdjacentHTML('afterend', templateString); 
+        if(tableDom.dataset.target === 'maxList'){
+            ele.insertAdjacentHTML('afterend', templateStringOne); 
+        }else if(tableDom.dataset.target === "miniList"){
+            ele.insertAdjacentHTML('afterend', templateStringTwo); 
+        }else if(tableDom.dataset.target === "archive"){
+            ele.insertAdjacentHTML('afterend', templateStringThree); 
+        }
+
         ele.classList.add('show-option'); 
 
         if(tableDom.scrollHeight > tableDom.clientHeight){
-            ele.nextSibling.classList.replace('top-6', 'bottom-6');
+            ele.nextSibling.classList.replace('top-6', 'bottom-6')
         }
     }
 
