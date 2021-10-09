@@ -1,0 +1,31 @@
+.table {
+    @apply border min-w-full;
+
+    & thead {
+        @apply border-b text-tDark text-sm;
+
+        & tr {
+            @apply text-left;
+
+            & th {
+                @apply px-4 py-2;
+            }
+        }
+    }
+
+    & tbody {
+        @apply text-sm;
+
+        & tr {
+            @apply border-b;
+
+            & td {
+                @apply px-4 py-1;
+
+                &:first-child{
+                    @apply text-center;
+                }
+            }
+        }
+    }
+}

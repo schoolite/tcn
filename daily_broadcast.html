@@ -208,66 +208,64 @@
                 </div>
                 <div class="md:flex justify-between items-baseline mb-8">
                     <p class="font-normal text-sm text-tLight mb-3 md:mb-0"> Showing <span>10</span> of <span>32</span> Results </p>
-                    <form class=" w-full md:w-3/6 lg:w-1/4" action="/" method="post">
-                        <div class="relative">
-                            <label class="sr-only text-xs">Search</label>
-                            <input class="py-2 pl-3 pr-7 text-xs rounded-lg outline-none border w-full text-cLight" type="text" name="text" id="tetx" placeholder="Search...">
-                            <svg class="absolute top-2 right-2" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.875 13.5C10.9816 13.5 13.5 10.9816 13.5 7.875C13.5 4.7684 10.9816 2.25 7.875 2.25C4.7684 2.25 2.25 4.7684 2.25 7.875C2.25 10.9816 4.7684 13.5 7.875 13.5Z" stroke="#333333" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M15.7496 15.7501L11.8496 11.8501" stroke="#3F4E5B" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                        
+                    <form class="flex flex-col md:flex-row justify-between md:items-center gap-2.5" action="/" method="post">
+                        <h3 class="font-medium text-sm" > Filter By:</h3>
+                        <div class="flex-1">
+                            <span class="sr-only uppercase font-lato font-normal text-xs mb-1 text-gray-600">Week</span>
+                            <select name="month" id="month-select" class="w-full rounded border-gray-300 text-gray-400">
+                                <option value="" class="font-lato text-gray-300"><p class="font-lato text-xs text-gray-300">This Month</p></option>
+                            </select>
                         </div>
                    </form>
                 </div>
 
                 <!-- Region table -->
                 <div class="Region_table">
-                    <div class="relative overflow-x-auto">
+                    <div class="details relative overflow-x-auto" data-target="broadcast">
                         <div class="align-middle inline-block min-w-full">
-                            <table class="min-w-full border">
-                                <thead class="border-b text-tDark text-sm">
-                                    <tr class="text-left">
-                                        <th class="px-4 py-2">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
                                             S/N
                                         </th>
-                                        <th class="px-4 py-2">
+                                        <th>
                                              Operational Report of
                                         </th>
-                                        <th class="px-4 py-2">
+                                        <th>
                                              For Event of
                                         </th>
-                                        <th class="px-4 py-2">
+                                        <th>
                                              Approved by
                                         </th>
-                                        <th class="px-4 py-2">
+                                        <th>
                                              Uploaded by
                                         </th>
-                                        <th class="px-4 py-2">
+                                        <th>
                                             Actions
                                         </th>
                                     </tr>
                                 </thead>
-                                <tbody class="text-sm">
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-left">
+                                <tbody>
+                                    <tr>
+                                        <td>
                                             1
                                         </td>
                                         
-                                        
-                                        <td class="px-4 py-1">
+                                        <td>
                                             07/09/2010
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             07/09/2010
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Andrews Peter
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                              Andrews Peter
                                         </td>
                                         
-                                        <td class="px-4 py-1 relative">
+                                        <td class="relative">
                                             
                                             <div class="cursor-pointer tr-option-btn" >
                                                 <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -279,301 +277,274 @@
                                             
                                         </td>
                                     </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-left">
+                                    <tr>
+                                        <td>
                                             1
                                         </td>
                                         
-                                        
-                                        <td class="px-4 py-1">
+                                        <td>
                                             07/09/2010
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             07/09/2010
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Andrews Peter
                                         </td>
-                                        <td class="px-4 py-1">
-                                             AndAndrews Peter
+                                        <td>
+                                             Andrews Peter
                                         </td>
                                         
-                                        <td class="px-4 py-1 relative">
-                                            <div class="dropdownList w-full" data-id='1'>
-                                                <div class="cursor-pointer tr-option-btn" >
-                                                    <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg>
-                                                </div>
-    
-                                                
+                                        <td class="relative">
+                                            
+                                            <div class="cursor-pointer tr-option-btn" >
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
                                             </div>
+                                            
                                         </td>
                                     </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-left">
+                                    <tr>
+                                        <td>
                                             1
                                         </td>
                                         
-                                        
-                                        <td class="px-4 py-1">
+                                        <td>
                                             07/09/2010
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             07/09/2010
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Andrews Peter
                                         </td>
-                                        <td class="px-4 py-1">
-                                            Andrews Peter
+                                        <td>
+                                             Andrews Peter
                                         </td>
                                         
-                                        <td class="px-4 py-1 relative">
-                                            <div class="dropdownList w-full" data-id='1'>
-                                                <div class="cursor-pointer tr-option-btn" >
-                                                    <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg>
-                                                </div>
-    
-                                                
+                                        <td class="relative">
+                                            
+                                            <div class="cursor-pointer tr-option-btn" >
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
                                             </div>
+                                            
                                         </td>
                                     </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-left">
+                                    <tr>
+                                        <td>
                                             1
                                         </td>
                                         
-                                        
-                                        <td class="px-4 py-1">
+                                        <td>
                                             07/09/2010
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             07/09/2010
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Andrews Peter
                                         </td>
-                                        <td class="px-4 py-1">
-                                            Andrews Peter
+                                        <td>
+                                             Andrews Peter
                                         </td>
                                         
-                                        <td class="px-4 py-1 relative">
-                                            <div class="dropdownList w-full" data-id='1'>
-                                                <div class="cursor-pointer tr-option-btn" >
-                                                    <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg>
-                                                </div>
-    
-                                                
+                                        <td class="relative">
+                                            
+                                            <div class="cursor-pointer tr-option-btn" >
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
                                             </div>
+                                            
                                         </td>
                                     </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-left">
+                                    <tr>
+                                        <td>
                                             1
                                         </td>
                                         
-                                        
-                                        <td class="px-4 py-1">
+                                        <td>
                                             07/09/2010
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             07/09/2010
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Andrews Peter
                                         </td>
-                                        <td class="px-4 py-1">
-                                            Andrews Peter
+                                        <td>
+                                             Andrews Peter
                                         </td>
                                         
-                                        <td class="px-4 py-1 relative">
-                                            <div class="dropdownList w-full" data-id='1'>
-                                                <div class="cursor-pointer tr-option-btn" >
-                                                    <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg>
-                                                </div>
-    
-                                               
+                                        <td class="relative">
+                                            
+                                            <div class="cursor-pointer tr-option-btn" >
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
                                             </div>
+                                            
                                         </td>
                                     </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-left">
+                                    <tr>
+                                        <td>
                                             1
                                         </td>
                                         
-                                        
-                                        <td class="px-4 py-1">
+                                        <td>
                                             07/09/2010
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             07/09/2010
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Andrews Peter
                                         </td>
-                                        <td class="px-4 py-1">
-                                            Andrews Peter
+                                        <td>
+                                             Andrews Peter
                                         </td>
                                         
-                                        <td class="px-4 py-1 relative">
-                                            <div class="dropdownList w-full" data-id='1'>
-                                                <div class="cursor-pointer tr-option-btn" >
-                                                    <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg>
-                                                </div>
-    
-                                                
+                                        <td class="relative">
+                                            
+                                            <div class="cursor-pointer tr-option-btn" >
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
                                             </div>
+                                            
                                         </td>
                                     </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-left">
+                                    <tr>
+                                        <td>
                                             1
                                         </td>
                                         
-                                        
-                                        <td class="px-4 py-1">
+                                        <td>
                                             07/09/2010
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             07/09/2010
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Andrews Peter
                                         </td>
-                                        <td class="px-4 py-1">
-                                            Andrews Peter
+                                        <td>
+                                             Andrews Peter
                                         </td>
                                         
-                                        <td class="px-4 py-1 relative">
-                                            <div class="dropdownList w-full" data-id='1'>
-                                                <div class="cursor-pointer tr-option-btn" >
-                                                    <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg>
-                                                </div>
-    
+                                        <td class="relative">
+                                            
+                                            <div class="cursor-pointer tr-option-btn" >
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
                                             </div>
+                                            
                                         </td>
                                     </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-left">
+                                    <tr>
+                                        <td>
                                             1
                                         </td>
                                         
-                                        
-                                        <td class="px-4 py-1">
+                                        <td>
                                             07/09/2010
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             07/09/2010
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Andrews Peter
                                         </td>
-                                        <td class="px-4 py-1">
-                                            07/09/2010
+                                        <td>
+                                             Andrews Peter
                                         </td>
                                         
-                                        <td class="px-4 py-1 relative">
-                                            <div class="dropdownList w-full" data-id="2">
-                                                <div class="cursor-pointer tr-option-btn" >
-                                                    <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg>
-                                                </div>
-    
-                                                
+                                        <td class="relative">
+                                            
+                                            <div class="cursor-pointer tr-option-btn" >
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
                                             </div>
+                                            
                                         </td>
                                     </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-left">
+                                    <tr>
+                                        <td>
                                             1
                                         </td>
                                         
-                                        
-                                        <td class="px-4 py-1">
+                                        <td>
                                             07/09/2010
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             07/09/2010
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Andrews Peter
                                         </td>
-                                        <td class="px-4 py-1">
-                                            07/09/2010
+                                        <td>
+                                             Andrews Peter
                                         </td>
                                         
-                                        <td class="px-4 py-1 relative">
-                                            <div class="dropdownList w-full" data-id="2">
-                                                <div class="cursor-pointer tr-option-btn" >
-                                                    <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg>
-                                                </div>
-    
-                                                <div class="z-50 bg-white absolute w-24 -left-4 bottom-6">
-                                                    
-                                                </div>
+                                        <td class="relative">
+                                            
+                                            <div class="cursor-pointer tr-option-btn" >
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
                                             </div>
+                                            
                                         </td>
                                     </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-left">
+                                    <tr>
+                                        <td>
                                             1
                                         </td>
                                         
-                                        
-                                        <td class="px-4 py-1">
+                                        <td>
                                             07/09/2010
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             07/09/2010
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Andrews Peter
                                         </td>
-                                        <td class="px-4 py-1">
-                                            07/09/2010
+                                        <td>
+                                             Andrews Peter
                                         </td>
                                         
-                                        <td class="px-4 py-1 relative">
-                                            <div class="dropdownList w-full" data-id="2">
-                                                <div class="cursor-pointer tr-option-btn" >
-                                                    <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg>
-                                                </div>
-
+                                        <td class="relative">
+                                            
+                                            <div class="cursor-pointer tr-option-btn" >
+                                                <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.8284 4 16.5 3.32843 16.5 2.5C16.5 1.67157 15.8284 1 15 1C14.1716 1 13.5 1.67157 13.5 2.5C13.5 3.32843 14.1716 4 15 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3.82843 4 4.5 3.32843 4.5 2.5C4.5 1.67157 3.82843 1 3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
                                             </div>
+                                            
                                         </td>
                                     </tr>
                                 </tbody>

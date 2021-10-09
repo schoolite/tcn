@@ -19,22 +19,37 @@
                     <img src="./img/logo.png" alt="logo" class="mx-auto">
                     <span class="text-primary font-lato hidden md:hidden lg:block md:text-sm font-bold">TRANSMISSION COMPANY OF NIGERIA</span>
                 </div>
-                <div class="dropdown cursor-pointer flex gap-5 items-center font-bold font-lato">
-                    <span class="text-primary  text-sm uppercase">menu</span>
-                    <svg class="navIcon hidden" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.5 0.75L6 5.25L10.5 0.75" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <svg class="navIcon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.5 11.25L9 6.75L4.5 11.25" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                       
+                <div class="dropdown cursor-pointer flex gap-3 items-center font-bold font-lato">
+                    <div class="text-primary text-sm uppercase">menu</div>
+                    <div class="flex items-center">
+                        <span class="navIcon pt-3 hidden transition-transform">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 0.75L6 5.25L10.5 0.75" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <span class="navIcon transition-transform">
+                            <svg  width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.5 11.25L9 6.75L4.5 11.25" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>    
+                        </span>                   
+                    </div>
                 </div>
-                <div class="profile flex gap-5 relative items-center">
+                <div class="profile flex gap-5 relative cursor-pointer items-center">
                     <img src="./img/Avatars.png" alt="logo">
-                    <div class="gap-5 items-center font-bold font-lato hidden md:hidden lg:flex">
-                        <span class="text-primary text-sm uppercase font-bold">admin name</span>
-                        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.5 0.75L6 5.25L10.5 0.75" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>                    
+                    <div class="gap-3 items-center font-bold font-lato hidden md:hidden lg:flex">
+                        <div class="text-primary text-sm uppercase font-bold">admin name</div>
+                        <div class="flex items-center">
+                            <span class="userIcon pt-3 hidden transition-transform">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 0.75L6 5.25L10.5 0.75" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span class="userIcon transition-transform">
+                                <svg  width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.5 11.25L9 6.75L4.5 11.25" stroke="#2269AB" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </span>                   
+                        </div>                  
                     </div>
                 </div>
 
@@ -214,72 +229,72 @@
                 <div class="SystemUser_table">
                     <div class="relative overflow-x-auto overflow-y-hidden">
                         <div class="align-middle inline-block min-w-full">
-                            <table class="min-w-full border">
-                                <thead class="border-b text-tDark text-sm">
-                                    <tr class="text-left">
-                                        <th class="px-4 py-2">
+                            <tbale class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
                                             S/N
                                         </th>
-                                        <th class="px-4 py-2">
+                                        <th>
                                             FullName
                                         </th>
-                                        <th class="px-4 py-2">
+                                        <th>
                                             Email
                                         </th>
-                                        <th class="px-4 py-2">
+                                        <th>
                                             Phone
                                         </th>
-                                        <th class="px-4 py-2">
+                                        <th>
                                             Position
                                         </th>
-                                        <th class="px-4 py-2">
+                                        <th>
                                             Station
                                         </th>
-                                        <th class="px-4 py-2">
+                                        <th>
                                             Department
                                         </th>
-                                        <th class="px-4 py-2">
+                                        <th>
                                             Acess Right
                                         </th>
-                                        <th class="px-4 py-2">
+                                        <th>
                                             Status
                                         </th>
-                                        <th class="px-4 py-2">
+                                        <th>
                                             Actions
                                         </th>
                                     </tr>
                                 </thead>
-                                <tbody class="text-sm">
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-center">
+                                <tbody>
+                                    <tr>
+                                        <td>
                                             1
                                         </td>
                                         <td class="w-36 p-4 flex gap-2">
                                             <img class="bg-tDark w-5 h-5 rounded-full" src="" alt="">
                                             Idris Bala
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Balaidris@gmail.com
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             0906755344
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Superior
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             XYZ Station
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Energy Dept.
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Superior Controller
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
                                         </td>
-                                        <td class="px-4 py-1 relative">
+                                        <td class="relative">
                                             <span class="cursor-pointer">
                                                 <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
@@ -289,36 +304,36 @@
                                             </span>
                                         </td>
                                     </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-center">
+                                    <tr>
+                                        <td>
                                             1
                                         </td>
                                         <td class="w-36 p-4 flex gap-2">
                                             <img class="bg-tDark w-5 h-5 rounded-full" src="" alt="">
                                             Idris Bala
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Balaidris@gmail.com
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             0906755344
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Superior
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             XYZ Station
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Energy Dept.
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Superior Controller
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
                                         </td>
-                                        <td class="px-4 py-1 relative">
+                                        <td class="relative">
                                             <span class="cursor-pointer">
                                                 <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
@@ -328,36 +343,36 @@
                                             </span>
                                         </td>
                                     </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-center">
+                                    <tr>
+                                        <td>
                                             1
                                         </td>
                                         <td class="w-36 p-4 flex gap-2">
                                             <img class="bg-tDark w-5 h-5 rounded-full" src="" alt="">
                                             Idris Bala
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Balaidris@gmail.com
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             0906755344
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Superior
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             XYZ Station
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Energy Dept.
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Superior Controller
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
                                         </td>
-                                        <td class="px-4 py-1 relative">
+                                        <td class="relative">
                                             <span class="cursor-pointer">
                                                 <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
@@ -367,36 +382,36 @@
                                             </span>
                                         </td>
                                     </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-center">
+                                    <tr>
+                                        <td>
                                             1
                                         </td>
                                         <td class="w-36 p-4 flex gap-2">
                                             <img class="bg-tDark w-5 h-5 rounded-full" src="" alt="">
                                             Idris Bala
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Balaidris@gmail.com
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             0906755344
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Superior
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             XYZ Station
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Energy Dept.
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Superior Controller
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
                                         </td>
-                                        <td class="px-4 py-1 relative">
+                                        <td class="relative">
                                             <span class="cursor-pointer">
                                                 <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
@@ -406,36 +421,36 @@
                                             </span>
                                         </td>
                                     </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-center">
+                                    <tr>
+                                        <td>
                                             1
                                         </td>
                                         <td class="w-36 p-4 flex gap-2">
                                             <img class="bg-tDark w-5 h-5 rounded-full" src="" alt="">
                                             Idris Bala
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Balaidris@gmail.com
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             0906755344
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Superior
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             XYZ Station
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Energy Dept.
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Superior Controller
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
                                         </td>
-                                        <td class="px-4 py-1 relative">
+                                        <td class="relative">
                                             <span class="cursor-pointer">
                                                 <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
@@ -445,36 +460,36 @@
                                             </span>
                                         </td>
                                     </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-center">
+                                    <tr>
+                                        <td>
                                             1
                                         </td>
                                         <td class="w-36 p-4 flex gap-2">
                                             <img class="bg-tDark w-5 h-5 rounded-full" src="" alt="">
                                             Idris Bala
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Balaidris@gmail.com
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             0906755344
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Superior
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             XYZ Station
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Energy Dept.
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Superior Controller
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
                                         </td>
-                                        <td class="px-4 py-1 relative">
+                                        <td class="relative">
                                             <span class="cursor-pointer">
                                                 <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
@@ -484,36 +499,36 @@
                                             </span>
                                         </td>
                                     </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-center">
+                                    <tr>
+                                        <td>
                                             1
                                         </td>
                                         <td class="w-36 p-4 flex gap-2">
                                             <img class="bg-tDark w-5 h-5 rounded-full" src="" alt="">
                                             Idris Bala
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Balaidris@gmail.com
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             0906755344
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Superior
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             XYZ Station
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Energy Dept.
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Superior Controller
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
                                         </td>
-                                        <td class="px-4 py-1 relative">
+                                        <td class="relative">
                                             <span class="cursor-pointer">
                                                 <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
@@ -523,36 +538,36 @@
                                             </span>
                                         </td>
                                     </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-center">
+                                    <tr>
+                                        <td>
                                             1
                                         </td>
                                         <td class="w-36 p-4 flex gap-2">
                                             <img class="bg-tDark w-5 h-5 rounded-full" src="" alt="">
                                             Idris Bala
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Balaidris@gmail.com
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             0906755344
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Superior
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             XYZ Station
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Energy Dept.
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Superior Controller
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
                                         </td>
-                                        <td class="px-4 py-1 relative">
+                                        <td class="relative">
                                             <span class="cursor-pointer">
                                                 <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
@@ -562,36 +577,36 @@
                                             </span>
                                         </td>
                                     </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-center">
+                                    <tr>
+                                        <td>
                                             1
                                         </td>
                                         <td class="w-36 p-4 flex gap-2">
                                             <img class="bg-tDark w-5 h-5 rounded-full" src="" alt="">
                                             Idris Bala
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Balaidris@gmail.com
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             0906755344
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Superior
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             XYZ Station
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Energy Dept.
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Superior Controller
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
                                         </td>
-                                        <td class="px-4 py-1 relative">
+                                        <td class="relative">
                                             <span class="cursor-pointer">
                                                 <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>
@@ -601,36 +616,36 @@
                                             </span>
                                         </td>
                                     </tr>
-                                    <tr class="border-b">
-                                        <td class="px-4 py-1 text-center">
+                                    <tr>
+                                        <td>
                                             1
                                         </td>
                                         <td class="w-36 p-4 flex gap-2">
                                             <img class="bg-tDark w-5 h-5 rounded-full" src="" alt="">
                                             Idris Bala
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Balaidris@gmail.com
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             0906755344
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Superior
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             XYZ Station
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Energy Dept.
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             Superior Controller
                                         </td>
-                                        <td class="px-4 py-1">
+                                        <td>
                                             <button type="button" class="py-1 px-2 bg-primary hover:shadow-xl rounded-sm text-white" > Enabled</button>
                                         </td>
-                                        <td class="px-4 py-1 relative">
+                                        <td class="relative">
                                             <span class="cursor-pointer">
                                                 <svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9.82843 4 10.5 3.32843 10.5 2.5C10.5 1.67157 9.82843 1 9 1C8.17157 1 7.5 1.67157 7.5 2.5C7.5 3.32843 8.17157 4 9 4Z" stroke="#9CABB9" stroke-width="1.22693" stroke-linecap="round" stroke-linejoin="round"/>

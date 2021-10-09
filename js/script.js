@@ -23,26 +23,32 @@
 
 
         let addToggler = function(el, caret){
-            if(!el.classList.contains('hidden')){
-                el.classList.add('hidden');
-
-                caretToggle(caret)
+            if(el){
+                if(!el.classList.contains('hidden')){
+                    el.classList.add('hidden');
+    
+                    caretToggle(caret)
+                }
             }
         }
 
-        menu.addEventListener('click', (e)=>{
-            toggler(navMenu);
-            caretToggle(navCaret);
-
-            addToggler(userMenu, userCaret);
-        });
+        if(menu){
+            menu.addEventListener('click', (e)=>{
+                toggler(navMenu);
+                caretToggle(navCaret);
+    
+                addToggler(userMenu, userCaret);
+            });
+        }
         
-        user.addEventListener('click', (e)=>{
-            toggler(userMenu);
-            caretToggle(userCaret);
-
-            addToggler(navMenu, navCaret)
-        });
+        if(user){
+            user.addEventListener('click', (e)=>{
+                toggler(userMenu);
+                caretToggle(userCaret);
+    
+                addToggler(navMenu, navCaret)
+            });
+        }
 
         const trOptionBtns = document.querySelectorAll('.tr-option-btn');
         trOptionBtns.forEach(trOptionBtn => {
@@ -80,9 +86,26 @@ function toggleOption(ele, tableDom){
                                     <li  class="p-2 border-b cursor-pointer"><a href="#"> Change Status </a></li>
                                 </ul> 
                             </div>`;
+
     let templateStringThree = `<div class="tr-options z-50 bg-white absolute w-24 -left-4 top-6">
                                 <ul class="list border rounded-lg text-xs font-medium">
                                     <li class="p-2 border-b cursor-pointer"><a href="#"> Download </a></li>
+                                </ul> 
+                            </div>`;
+
+    let templateStringFour = `<div class="tr-options z-50 bg-white absolute w-28 -left-4 top-6">
+                                <ul class="list border rounded-lg text-xs font-medium">
+                                    <li class="p-2 border-b cursor-pointer"><a href="#"> View </a></li>
+                                    <li class="p-2 border-b cursor-pointer"><a href="#"> Print </a></li>
+                                    <li class="p-2 border-b cursor-pointer"><a href="#"> Export to pdf </a></li>
+                                    <li class="p-2 border-b cursor-pointer"><a href="#"> Export to excel </a></li>
+                                </ul> 
+                            </div>`;
+    let templateStringFive = `<div class="tr-options z-50 bg-white absolute w-28 -left-4 top-6">
+                                <ul class="list border rounded-lg text-xs font-medium">
+                                    <li class="p-2 border-b cursor-pointer"><a href="#"> Edit </a></li>
+                                    <li class="p-2 border-b cursor-pointer"><a href="#"> View Detail </a></li>
+                                    <li class="p-2 border-b cursor-pointer"><a href="#"> Change Status </a></li>
                                 </ul> 
                             </div>`;
     
@@ -92,13 +115,25 @@ function toggleOption(ele, tableDom){
             ele.nextSibling.remove();
         }
     }else{
-        if(tableDom.dataset.target === 'maxList'){
-            ele.insertAdjacentHTML('afterend', templateStringOne); 
-        }else if(tableDom.dataset.target === "miniList"){
-            ele.insertAdjacentHTML('afterend', templateStringTwo); 
-        }else if(tableDom.dataset.target === "archive"){
-            ele.insertAdjacentHTML('afterend', templateStringThree); 
-        }
+        switch(tableDom.dataset.target) {
+            case "maxList":
+                ele.insertAdjacentHTML('afterend', templateStringOne); 
+                break;
+            case "miniList":
+                ele.insertAdjacentHTML('afterend', templateStringTwo); 
+                break;
+            case "archive":
+                ele.insertAdjacentHTML('afterend', templateStringThree);
+                break;
+            case "broadcast":
+                ele.insertAdjacentHTML('afterend', templateStringFour); 
+                break;
+            case "access":
+                ele.insertAdjacentHTML('afterend', templateStringFive);
+                break;
+            default:
+              // code block
+          }
 
         ele.classList.add('show-option'); 
 
