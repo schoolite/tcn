@@ -1,0 +1,39 @@
+.btn{
+
+     & .xlg{
+          @apply w-full bg-primary hover:shadow-xl text-white uppercase text-sm font-bold px-8 py-3 rounded-md;
+     }
+
+     & .md{
+          @apply  px-4 py-3 hover:shadow-xl uppercase rounded-lg font-lato font-normal text-xs;
+          
+          & .primary{
+               @apply text-white bg-blue-900 ;
+          }
+          & .secondary{
+               
+          }
+     }
+     
+     & .sm{
+          @apply  px-3 py-2 border rounded text-xs font-medium uppercase flex items-center;
+
+          & .primary{
+               @apply text-white bg-primary;
+          }
+          & .secondary{
+               @apply border hover:shadow text-primary;
+          }
+     }
+
+     & .xsm{
+          @apply  py-1 px-2  hover:shadow-xl rounded-sm text-white;
+
+          & .primary{
+               @apply bg-primary
+          }
+          & .danger{
+               
+          }
+     }
+}
