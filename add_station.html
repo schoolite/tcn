@@ -208,13 +208,13 @@
                     <div>
                         <h1 class="mb-6 font-lato font-bold text-2xl">Add Stations</h1>
                     </div>
-                    <div>
+                    <!-- <div>
                         <form class="" method="post">
                             <div class="lg:flex lg:flex-row lg:gap-8 ">
                                 <div class="flex flex-col gap-4 mb-4">
                                     <div class="flex flex-col">
                                         <span class="uppercase font-lato font-normal text-xs mb-1 text-gray-600">Name of station</span>
-                                        <input type="text" class="w-full lg:w-96 lg:py-2 rounded border-gray-300 ">
+                                        <input type="text" class="form-control">
                                     </div>
                                     <div class="flex flex-col">
                                         <span class="uppercase font-lato font-normal text-xs mb-1 text-gray-600">region</span>
@@ -252,9 +252,55 @@
                             </div>
                         </form>
                         <div class="mt-2">
-                            <button class="btn md primary text-white bg-blue-900 hover:shadow-xl uppercase px-4 py-3 rounded-lg font-lato font-normal text-xs">add station</button>
+                            <button class="btn btn-lg btn-primary text-xs">add station</button>
                         </div>
-                    </div>
+                    </div> -->
+                    <form class="mt-14 form" method="post">
+                        <div class="w-full xl:w-4/5">
+                            <div class="flex flex-col lg:flex-row gap-2 lg:gap-8 mb-2">
+                                <div class="flex-1">
+                                    <span class="uppercase font-lato font-normal text-xs mb-1 text-gray-600">Name of station</span>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="flex-1">
+                                    <span class="uppercase font-lato font-normal text-xs mb-1 text-gray-600">Station type</span>
+                                    <select name="pets" id="pet-select" class="form-control">
+                                        <option value="" class="font-lato text-gray-300"><p class="font-lato text-xs text-gray-300">Select Station type</p></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="flex flex-col lg:flex-row gap-2 lg:gap-8 mb-2">
+                                <div class="flex-1">
+                                    <span class="uppercase font-lato font-normal text-xs mb-1 text-gray-600">Region</span>
+                                    <select name="pets" id="pet-select" class="form-control">
+                                        <option value="" class="font-lato text-gray-300"><p class="font-lato text-xs text-gray-300">Select Station type</p></option>
+                                    </select>
+                                </div>
+                                <div class="flex-1">
+                                    <span class="uppercase font-lato font-normal text-xs mb-1 text-gray-600">Power Generator Type</span>
+                                    <select name="pets" id="pet-select" class="form-control">
+                                        <option value="" class="font-lato text-gray-300"><p class="font-lato text-xs text-gray-300">Select Station type</p></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="flex flex-col lg:flex-row gap-2 lg:gap-8 mb-2">
+                                <div class="flex-1">
+                                    <span class="uppercase font-normal text-xs mb-1 text-gray-600">description of the station</span>
+                                    <textarea class="form-control h-20" type="text"></textarea>    
+                                </div>
+                                <div class="flex-1">
+                                    <span class="uppercase font-lato font-normal text-xs mb-1 text-gray-600">Status</span>
+                                    <select name="pets" id="pet-select" class="w-full rounded border-gray-300 text-gray-400">
+                                        <option value="" class="font-lato text-gray-300"><p class="font-lato text-xs text-gray-300">Select Station type</p></option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mt-12">
+                                <button class="btn btn-lg btn-primary text-xs">add station</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

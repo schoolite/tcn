@@ -1,6 +1,0 @@
-@import './components/table.scss';
-@import './components/button.scss';
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

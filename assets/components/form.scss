@@ -1,0 +1,8 @@
+.form{
+    &-control {
+        @apply w-full rounded border-gray-300 outline-none text-gray-400;
+    }
+
+    w-full text-cLight border rounded  outline-none focus:shadow-outline
+    w-full lg:w-96 lg:py-2 rounded border border-gray-300 
+}
