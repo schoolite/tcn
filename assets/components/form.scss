@@ -1,8 +1,13 @@
 .form{
     &-control {
-        @apply w-full rounded border-gray-300 outline-none text-gray-400;
+        @apply w-full border rounded outline-none border-gray-300 text-gray-400;
     }
 
-    w-full text-cLight border rounded  outline-none focus:shadow-outline
-    w-full lg:w-96 lg:py-2 rounded border border-gray-300 
+    &-width{
+        @apply lg:w-96;
+    }
+
+    &-label {
+        @apply uppercase font-lato font-normal text-xs mb-1 text-gray-600;
+    }
 }

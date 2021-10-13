@@ -1,0 +1,7 @@
+@import './components/table.scss';
+@import './components/button.scss';
+@import './components/nav.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

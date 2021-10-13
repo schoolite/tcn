@@ -1,0 +1,6 @@
+.nav-info-cont{
+     @apply grid grid-rows-6 gap-4 md:grid md:grid-rows-4 md:grid-flow-col md:gap-4 lg:grid lg:grid-rows-2 lg:grid-flow-col lg:grid-cols-3 lg:gap-4;
+}
+.nav-info{
+     @apply group cursor-pointer p-4 rounded-lg border flex gap-5 hover:bg-primary md:py-4 md:px-2 lg:py-5 lg:px-3;
+}
