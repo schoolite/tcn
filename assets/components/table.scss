@@ -29,3 +29,52 @@
         }
     }
 }
+
+.Load_Records{
+    height: 92vh;
+
+    & .hours{
+        & p{
+            padding: 8px;
+            background: green; 
+            width: 121px;
+            border: 1px solid rgb(229, 231, 235);
+            text-align: center;
+            font-weight: 600;
+            color: #d3d1d1;
+            font-size: 14px;
+        }
+    }
+
+    & .table{
+        & thead{
+            background-color: blue;
+            
+            & tr{
+                & th{
+                    padding: 9px 0;
+                    border: 1px solid rgb(229, 231, 235); 
+                    text-align: center;
+                    text-transform: capitalize;
+                }
+            }
+        }
+        & tbody{
+            & tr{
+                & td {
+                    @apply p-0;
+
+                    & .cell{
+                        padding: 9px 0;
+                        border-right: 1px solid rgb(229, 231, 235);
+                        text-align: center;
+                        &:focus{
+                            outline-color: red;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

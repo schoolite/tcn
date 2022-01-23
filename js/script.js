@@ -143,5 +143,7 @@ function toggleOption(ele, tableDom){
     }
 
    
+    let cells = document.querySelectorAll('.cell');
 
+    console.log(cells);
 }
