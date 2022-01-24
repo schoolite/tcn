@@ -33,6 +33,14 @@
 .Load_Records{
     height: 92vh;
 
+    .cell{
+        width: 160px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     & .hours{
         & p{
             padding: 8px;
@@ -49,7 +57,7 @@
     & .table{
         & thead{
             background-color: blue;
-            
+
             & tr{
                 & th{
                     padding: 9px 0;
@@ -64,10 +72,28 @@
                 & td {
                     @apply p-0;
 
-                    & .cell{
+                    & .view,
+                    & .edit{
                         padding: 9px 0;
                         border-right: 1px solid rgb(229, 231, 235);
+                        width: 160px;
+                        height: 38px;
+
+                        &.active{
+                            display: block;
+                        }
+                    }
+
+                    & .edit{
+                        display: none;
+                    }
+
+                    & .view{
+                        display: none;
                         text-align: center;
+                    }
+
+                    & .edit{
                         &:focus{
                             outline-color: red;
                         }
