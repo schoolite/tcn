@@ -1,0 +1,23 @@
+.btn {
+  @apply cursor-pointer inline-block no-underline font-normal;
+}
+
+.btn-lg {
+  @apply rounded-md py-3 px-4 uppercase;
+}
+
+.btn-md {
+  @apply flex items-center px-3 py-2 rounded text-xs uppercase;
+}
+
+.btn-sm {
+  @apply py-1 px-2 rounded-sm;
+}
+
+.btn-primary {
+  @apply bg-primary text-white;
+}
+
+.btn-secondary {
+  @apply text-primary  bg-transparent border;
+}

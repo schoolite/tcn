@@ -1,0 +1,15 @@
+.breadcrumb {
+  @apply my-8 uppercase;
+}
+
+.breadcrumb-list {
+  @apply flex list-none text-primary;
+}
+
+.breadcrumb .active {
+  @apply text-cLight;
+}
+
+.breadcrumb-menuList {
+  @apply font-normal text-xs;
+}

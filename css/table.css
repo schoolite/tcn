@@ -1,0 +1,89 @@
+.table {
+  @apply border min-w-full;
+}
+
+.table thead {
+  @apply border-b text-tDark text-sm;
+}
+
+.table thead tr {
+  @apply text-left;
+}
+
+.table thead tr th {
+  @apply px-4 py-2;
+}
+
+.table tbody {
+  @apply text-sm;
+}
+
+.table tbody tr {
+  @apply border-b;
+}
+
+.table tbody tr td {
+  @apply px-4 py-1;
+}
+
+.table tbody tr td:first-child {
+  @apply text-center;
+}
+
+.Load_Records {
+  height: 92vh;
+  overflow: auto;
+  position: relative;
+}
+
+.Load_Records .table thead {
+  @apply static top-0 z-10;
+  background-color: #c9daf8;
+}
+
+.Load_Records .table tr {
+  @apply border-b border-black;
+}
+
+.Load_Records .table tr th,
+.Load_Records .table tr td {
+  padding: 8px 30px;
+  @apply text-center font-semibold border-r border-black;
+}
+
+.Load_Records .table tr th:first-child,
+.Load_Records .table tr td:first-child {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background-color: lime;
+}
+
+.Load_Records .table tr th:last-child,
+.Load_Records .table tr td:last-child {
+  background-color: cyan;
+}
+
+.Load_Records .table tr td .view,
+.Load_Records .table tr td .edit {
+  width: 80px;
+}
+
+.Load_Records .table tr td .view.active,
+.Load_Records .table tr td .edit.active {
+  display: inline-block;
+}
+
+.Load_Records .table tr td .edit {
+  display: none;
+}
+
+.Load_Records .table tr td .view {
+  display: none;
+  text-align: center;
+}
+
+.Load_Records .table tr td .edit:focus {
+  outline: none;
+}

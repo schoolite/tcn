@@ -32,75 +32,68 @@
 
 .Load_Records{
     height: 92vh;
-
-    .cell{
-        width: 160px;
-        height: 38px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    & .hours{
-        & p{
-            padding: 8px;
-            background: green; 
-            width: 121px;
-            border: 1px solid rgb(229, 231, 235);
-            text-align: center;
-            font-weight: 600;
-            color: #d3d1d1;
-            font-size: 14px;
-        }
-    }
+    overflow: auto;
+    position: relative;
 
     & .table{
-        & thead{
-            background-color: blue;
 
-            & tr{
-                & th{
-                    padding: 9px 0;
-                    border: 1px solid rgb(229, 231, 235); 
+        thead{
+            @apply sticky top-0 z-10;
+            background-color: rgb(201, 218, 248);
+        }
+
+        tr{
+
+            @apply border-b border-black;
+    
+            th,
+            td{
+                @apply text-center font-semibold border-r border-black;
+    
+                &:first-child {
+                    position:sticky;
+                    left:0;
+                    z-index:1;
+                    background-color: rgb(0, 255, 0);
+                }
+
+            }
+
+            th{
+                padding: 2px 30px;
+            }
+    
+            td{
+                @apply p-0;
+    
+                & .view,
+                & .edit{
+                    width: 140px;
+    
+                    &.active{
+                        display: inline-block;
+                    }
+                }
+        
+                & .edit{
+                    display: none;
+                    padding: 8px 0;
+                }
+        
+                & .view{
+                    display: none;
                     text-align: center;
-                    text-transform: capitalize;
+                    @apply py-2 px-0;
+                }
+        
+                & .edit{
+                    &:focus{
+                        outline-color: red;
+                    }
                 }
             }
+
         }
-        & tbody{
-            & tr{
-                & td {
-                    @apply p-0;
 
-                    & .view,
-                    & .edit{
-                        padding: 9px 0;
-                        border-right: 1px solid rgb(229, 231, 235);
-                        width: 160px;
-                        height: 38px;
-
-                        &.active{
-                            display: block;
-                        }
-                    }
-
-                    & .edit{
-                        display: none;
-                    }
-
-                    & .view{
-                        display: none;
-                        text-align: center;
-                    }
-
-                    & .edit{
-                        &:focus{
-                            outline-color: red;
-                        }
-                    }
-                }
-
-            }
-        }
     }
 }
