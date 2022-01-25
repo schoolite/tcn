@@ -31,9 +31,9 @@
         [926,220,405,301,92,75.9," ",220,286," ",110,76,179,160.7," ",137.7,75.5," "," ",99.2," "," "," "," ",117,82,59.9,24,78," ","15.0"," ",40.1,36.6," "," "," ",0  ],
         [957,230,424,303,100,77.7,90,217,282.8,71,109,84,173,175.2,85.3,141.7,75.6,43.6,4,87.7,37.5,5.9,99.1,18,130,74,52.2,24.2,74,68,"08.8",13.11,42.4,36.6,131.6,36.7,156.8,325.1  ],
         [970.5,232,428.5,310,108,80.4," ",229,280.9," ",109,80,173,177.7," ",152.2,75.6," "," ",87.7," "," "," "," ",130,74,54.1,24.1,66," ","08.8"," ",55.2,56.7," "," "," ",0  ],
-        [985,235,433,317,126,83,87,241,277.2,69,110,80,179,164.6,89,157.7,77.4,44.8,5,87.7,33.4,5.9,171.7,22,136,94,54.3,23.8,58,77,"O/S",12.31,75.4,63.5,128.8,42.2,144.2,315.2  ],
-        [987,235,439,313,122,99.9," ",247,275.9," ",102,80,179,177.2," ",165.7,77.4," "," ",90," "," "," "," ",136,94,49.2,24.1,64," ","O/S"," ",88.1,63.7," "," "," ",0  ],
-        [991,236,445,310,120,116.9,89,253,271.7,70,102,80,198,167,87,145.2,76.7,48.2,5,92.2,38.8,5.7,205.1,34,139,96,48.4,24.3,70,79,"O/S",13.13,104.5,71,115.9,71.9,150.2,338  ],
+        [985,235,433,317,126,83,87,241,277.2,69,110,80,179,164.6,89,157.7,77.4,44.8,5,87.7,33.4,5.9,171.7,22,136,94,54.3,23.8,58,77," ",12.31,75.4,63.5,128.8,42.2,144.2,315.2  ],
+        [987,235,439,313,122,99.9," ",247,275.9," ",102,80,179,177.2," ",165.7,77.4," "," ",90," "," "," "," ",136,94,49.2,24.1,64," "," "," ",88.1,63.7," "," "," ",0  ],
+        [991,236,445,310,120,116.9,89,253,271.7,70,102,80,198,167,87,145.2,76.7,48.2,5,92.2,38.8,5.7,205.1,34,139,96,48.4,24.3,70,79," ",13.13,104.5,71,115.9,71.9,150.2,338  ],
         [985,232,443,310,80,128.2," ",253,261," ",100,80,198,178.6," ",168.3,76.7," "," ",94.7," "," "," "," ",139,96,53.4,24,70," ","05.8"," ",102.2,71," "," "," ",0  ],
         [981,229,441,311,76,139.4,91,253,257.3,67,100,79,212,186.9,93,169.4,81.4,48.8,5,97.2,47.3,5.7,218.5,35,147,80,58.8,22.7,69,83,"05.5",13.04,101.3,76,142.9,82.6,168,393.5  ],
         [988.5,233,439.5,316,84,139.6," ",234,276.9," ",106,80,212,178.6," ",166.6,81.4," "," ",121.1," "," "," "," ",147,80,59.1,23.1,75," ","10.1"," ",90.4,76.5," "," "," ",0  ],
@@ -62,160 +62,168 @@
         [988,221,435,332,128,131.1,164,157,206.2,45,57,55,182,185.4,84,193.5,66.3,39.5,10,111.4,46.2,3.7,140,27,126,98,46.3,23.8,76,85,"07.2",9.1,73.5,76.4,136.9,75.2,142.7,354.8  ]
     ];
 
+    let states =['lagos','akangba', 'ikeja', 'ajah', 'egbin','olorunsogo','sakete','kaduna','kano','yola',
+                'jos', 'gombe', 'ayede', 'osogbo', 'ganmo', 'benin', 'delta', 'asaba','galaxy', 'alaoji',
+                'uyo', 'afam','port','adiabor','onitsha','haven', 'makurdi', 'gazaoua', 'kebbi','niamey',
+                'jebba','kainji', 'shiroro', 'ajaokuta', 'katampe','gwagwalada','apo', 'abuja' ]
+    
+
+
+
     hours.forEach( (hour,index) =>{
         tableRow += `<tr data-row="${hour}">
         <td>
             <div class="cell"> ${hour}</div>
         </td>
         <td>
-            <div class="cell" data-id="lagos-${hour}"> ${data[index][0]} </div>
+            <div class="cell" data-state="lagos" data-id="lagos-${hour}"> ${data[index][0]} </div>
         </td>
         <td>
-            <div class="view active" data-id="lagos-lg-${hour}"> ${data[index][1]} </div>
+            <div class="view active" data-state="akangba" data-id="lagos-lg-${hour}"> ${data[index][1]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-id="lagos-lg-${hour}"> ${data[index][2]} </div>
+            <div class="view active" data-state="ikeja" data-id="lagos-lg-${hour}"> ${data[index][2]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-id="lagos-lg-${hour}"> ${data[index][3]} </div>
+            <div class="view active" data-state="ajah" data-id="lagos-lg-${hour}"> ${data[index][3]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][4]} </div>
+            <div class="view active" data-state="egbin" data-eval="sum"> ${data[index][4]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][5]} </div>
+            <div class="view active" data-state="olorunsogo" data-eval="sum"> ${data[index][5]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][6]} </div>
+            <div class="view active" data-state="sakete" data-eval="sum"> ${data[index][6]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][7]} </div>
+            <div class="view active" data-state="kaduna" data-eval="sum"> ${data[index][7]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][8]} </div>
+            <div class="view active" data-state="kano" data-eval="sum"> ${data[index][8]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][9]} </div>
+            <div class="view active" data-state="yola" data-eval="sum"> ${data[index][9]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][10]} </div>
+            <div class="view active" data-state="jos" data-eval="sum"> ${data[index][10]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][11]} </div>
+            <div class="view active" data-state="gombe" data-eval="sum"> ${data[index][11]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][12]} </div>
+            <div class="view active" data-state="ayede" data-eval="sum"> ${data[index][12]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][13]} </div>
+            <div class="view active" data-state="osogbo" data-eval="sum"> ${data[index][13]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][14]} </div>
+            <div class="view active" data-state="ganmo" data-eval="sum"> ${data[index][14]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][15]} </div>
+            <div class="view active" data-state="benin" data-eval="sum"> ${data[index][15]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][16]} </div>
+            <div class="view active" data-state="delta" data-eval="sum"> ${data[index][16]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][17]} </div>
+            <div class="view active" data-state="asaba" data-eval="sum"> ${data[index][17]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][18]} </div>
+            <div class="view active" data-state="galaxy" data-eval="sum"> ${data[index][18]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][19]} </div>
+            <div class="view active" data-state="alaoji" data-eval="sum"> ${data[index][19]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][20]} </div>
+            <div class="view active" data-state="uyo" data-eval="sum"> ${data[index][20]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][21]} </div>
+            <div class="view active" data-state="afam" data-eval="sum"> ${data[index][21]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][22]} </div>
+            <div class="view active" data-state="port" data-eval="sum"> ${data[index][22]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][23]} </div>
+            <div class="view active" data-state="adiabor" data-eval="sum"> ${data[index][23]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][24]} </div>
+            <div class="view active" data-state="onitsha" data-eval="sum"> ${data[index][24]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][25]} </div>
+            <div class="view active" data-state="haven" data-eval="sum"> ${data[index][25]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][26]} </div>
+            <div class="view active" data-state="makurdi" data-eval="sum"> ${data[index][26]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][27]} </div>
+            <div class="view active"data-state="gazaoua" data-eval="sum"> ${data[index][27]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][28]} </div>
+            <div class="view active" data-state="kebbi" data-eval="sum"> ${data[index][28]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][29]} </div>
+            <div class="view active" data-state="niamey" data-eval="sum"> ${data[index][29]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][30]} </div>
+            <div class="view active" data-state="jebba" data-eval="sum"> ${data[index][30]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][31]} </div>
+            <div class="view active" data-state="kainji" data-eval="sum"> ${data[index][31]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][32]} </div>
+            <div class="view active" data-state="shiroro" data-eval="sum"> ${data[index][32]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-state="sum"> ${data[index][33]} </div>
+            <div class="view active" data-state="ajaokuta" data-eval="sum"> ${data[index][33]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-id="abuja-lg-${hour}"> ${data[index][34]} </div>
+            <div class="view active" data-state="katampe" data-id="abuja-lg-${hour}"> ${data[index][34]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-id="abuja-lg-${hour}"> ${data[index][35]} </div>
+            <div class="view active" data-state="gwagwalada" data-id="abuja-lg-${hour}"> ${data[index][35]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="view active" data-id="abuja-lg-${hour}"> ${data[index][36]} </div>
+            <div class="view active" data-state="apo" data-id="abuja-lg-${hour}"> ${data[index][36]} </div>
             <input class="edit" />
         </td>
         <td>
-            <div class="cell" data-id="abuja-${hour}" data-state="sum"> ${data[index][37]} </div>
+            <div class="cell" data-state="abuja" data-id="abuja-${hour}" data-eval="sum"> ${data[index][37]} </div>
         </td>
         <th>
             <div class="cell">${hour}</div> 
@@ -325,7 +333,7 @@ window.addEventListener('load', (e)=> {
 
             if(document.querySelector(`[data-row="${hour}"]`) && document.querySelector(`[data-total=total-${hour}]`)){
                 let tableRow = document.querySelector(`[data-row="${hour}"]`);
-                let cells = tableRow.querySelectorAll(`[data-state="sum"]`);
+                let cells = tableRow.querySelectorAll(`[data-eval="sum"]`);
                 let cellTotal = document.querySelector(`[data-total=total-${hour}]`);
 
                 let totalValue = 0;
@@ -342,5 +350,54 @@ window.addEventListener('load', (e)=> {
     }
 
     cellSumation();
+
+
+    states.forEach((state, index) =>{
+  
+
+        let stateValue = document.querySelectorAll(`[data-state=${state}]`);
+
+        let values =[];
+
+        if(stateValue){
+            stateValue.forEach( el => {
+                if(el.textContent.trim() != ''){
+                    values.push(parseFloat(el.textContent.trim()));
+                }
+            })
+        }
+
+
+        maxValue(values, state);
+        minValue(values, state);
+
+        
+
+    });
+
+    function maxValue(val, state){
+        let stateMax = document.querySelector(`[data-id=max-${state}]`);
+        let stateMaxTime = document.querySelector(`[data-id=maxTime-${state}]`);
+
+        let max = Math.max(...val);
+        let maxTime = hours[val.indexOf(max)];
+
+        stateMax.textContent = max;
+        stateMaxTime.textContent = maxTime;
+        
+
+    }
+
+
+    function minValue( val, state){
+        let stateMin = document.querySelector(`[data-id=min-${state}]`);
+        let stateMinTime = document.querySelector(`[data-id=minTime-${state}]`);
+
+        let min =  Math.min(...val);
+        let minTime = hours[val.indexOf(min)];
+
+        stateMin.textContent = min;
+        stateMinTime.textContent = minTime;
+    }
 
 });

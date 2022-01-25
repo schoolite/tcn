@@ -149,25 +149,5 @@ function toggleOption(ele, tableDom){
 }
 
 
-let row = ['45','55'];
-
-let data= [
-    [56,67,8,9,78,99,90],
-    [45,77,99,00,67,5,4]
-]
-let table = "";
-row.forEach(el, index => {
-    table += `<tr class="lg-${el}">
-           <td> ${data[index][index]}<td> 
-           <td> ${data[index][index+1]}<td> 
-           <td> ${data[index][index+2]}<td> 
-           <td> ${data[index][index+3]}<td> 
-           <td> ${data[index][index+4]}<td> 
-           <td> ${data[index][index+5]}<td> 
-           <td> ${data[index][index+6]}<td> 
-    </tr>`;
-})
-
-console.log(table);
 
 
