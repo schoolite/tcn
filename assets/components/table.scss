@@ -30,16 +30,17 @@
     }
 }
 
-.Load_Records{
+.Load_Records,
+.Voltage_Records{
     height: 92vh;
     overflow: auto;
     position: relative;
+    text-transform: uppercase;
 
     & .table{
 
         thead{
             @apply sticky top-0 z-10;
-            background-color: rgb(201, 218, 248);
         }
 
         tr{
@@ -54,12 +55,10 @@
                     position:sticky;
                     left:0;
                     z-index:1;
-                    background-color: rgb(0, 255, 0);
                 }
 
 
                 &:last-child {
-                    background-color: rgb(0,255,255);
                 }
 
             }
@@ -70,36 +69,34 @@
     
             td{
                 @apply p-0;
-
-
-    
-                & .view,
-                & .edit{
-                    width: 140px;
-    
-                    &.active{
-                        display: inline-block;
-                    }
-                }
-        
-                & .edit{
-                    display: none;
-                    padding: 8px 0;
-                }
-        
-                & .view{
-                    display: none;
-                    text-align: center;
-                    @apply py-2 px-0;
-                }
-        
-                & .edit{
-                    &:focus{
-                        outline-color: red;
-                    }
-                }
             }
 
+        }
+
+        .view,
+        .edit{
+            width: 140px;
+
+            &.active{
+                display: inline-block;
+            }
+        }
+
+        .edit{
+            display: none;
+            padding: 8px 0;
+        }
+
+        .view{
+            display: none;
+            text-align: center;
+            @apply py-2 px-0;
+        }
+
+        .edit{
+            &:focus{
+                outline-color: red;
+            }
         }
 
     }
